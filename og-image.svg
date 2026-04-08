@@ -1,0 +1,31 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F7F4EC"/>
+  <circle cx="181" cy="145" r="190" fill="#F0B35F" fill-opacity="0.20"/>
+  <circle cx="1070" cy="112" r="160" fill="#0D8B7C" fill-opacity="0.18"/>
+  <circle cx="995" cy="570" r="220" fill="#0D8B7C" fill-opacity="0.08"/>
+  <rect x="62" y="58" width="1076" height="514" rx="36" fill="#FFFDF8" stroke="#D9D2C2"/>
+  <rect x="102" y="102" width="94" height="94" rx="24" fill="url(#brand)"/>
+  <path d="M137 128H156.5C180.524 128 200 147.476 200 171.5C200 195.524 180.524 215 156.5 215H137V128Z" fill="rgba(255,255,255,0.16)"/>
+  <path d="M144 138H156C174.778 138 190 153.222 190 172C190 190.778 174.778 206 156 206H144V138Z" fill="white"/>
+  <path d="M152 152H158C168.493 152 177 160.507 177 171C177 181.493 168.493 190 158 190H152V152Z" fill="#0D8B7C"/>
+  <path d="M174 148H191V156H182V168H190V176H182V198H174V148Z" fill="#F0B35F"/>
+  <text x="232" y="150" fill="#1C2B2A" font-family="Manrope, Arial, sans-serif" font-size="30" font-weight="800">Destine Broker</text>
+  <text x="102" y="276" fill="#1C2B2A" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700">
+    <tspan x="102" dy="0">Asigurari online</tspan>
+    <tspan x="102" dy="86">simple si rapide</tspan>
+  </text>
+  <text x="102" y="432" fill="#5F716D" font-family="Manrope, Arial, sans-serif" font-size="28" font-weight="500">
+    <tspan x="102" dy="0">RCA, CASCO, locuinta si calatorie.</tspan>
+    <tspan x="102" dy="42">Suport personal si contact rapid oriunde in Romania.</tspan>
+  </text>
+  <rect x="102" y="495" width="272" height="62" rx="20" fill="#0D8B7C"/>
+  <text x="138" y="535" fill="white" font-family="Manrope, Arial, sans-serif" font-size="28" font-weight="800">Solicita oferta</text>
+  <rect x="396" y="495" width="250" height="62" rx="20" fill="#FFFFFF" stroke="#D3CEC0"/>
+  <text x="438" y="535" fill="#1C2B2A" font-family="Manrope, Arial, sans-serif" font-size="28" font-weight="800">WhatsApp</text>
+  <defs>
+    <linearGradient id="brand" x1="102" y1="102" x2="196" y2="196" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D8B7C"/>
+      <stop offset="1" stop-color="#08695D"/>
+    </linearGradient>
+  </defs>
+</svg>
