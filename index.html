@@ -74,11 +74,11 @@
     :root {
       --bg: #f7f4ec;
       --bg-soft: #fffdf8;
-      --surface: rgba(255, 255, 255, 0.62);
+      --surface: rgba(255, 255, 255, 0.4);
       --surface-strong: #ffffff;
       --text: #1c2b2a;
       --muted: #5f716d;
-      --line: rgba(28, 43, 42, 0.1);
+      --line: rgba(255, 255, 255, 0.68);
       --primary: #0d8b7c;
       --primary-deep: #08695d;
       --accent: #f0b35f;
@@ -148,11 +148,11 @@
       width: var(--bubble-width);
       margin: 0 auto;
       padding: 12px 24px;
-      border: 1px solid rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.82);
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.56);
-      backdrop-filter: blur(18px) saturate(140%);
-      box-shadow: 0 16px 36px rgba(46, 61, 59, 0.12);
+      background: rgba(255, 255, 255, 0.44);
+      backdrop-filter: blur(26px) saturate(165%);
+      box-shadow: 0 18px 44px rgba(46, 61, 59, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.65);
       animation: fade-up 0.7s ease both;
     }
 
@@ -162,14 +162,14 @@
       justify-content: center;
       text-decoration: none;
       flex-shrink: 0;
-      width: min(60%, 600px);
+      width: min(90%, 900px);
     }
 
     .brand-mark {
       width: 100%;
       height: auto;
       max-width: 100%;
-      max-height: 190px;
+      max-height: 285px;
       border-radius: 0;
       display: block;
       object-fit: contain;
@@ -199,8 +199,8 @@
     .footer-shell {
       border: 1px solid var(--line);
       background: var(--surface);
-      backdrop-filter: blur(16px) saturate(130%);
-      box-shadow: var(--shadow);
+      backdrop-filter: blur(24px) saturate(155%);
+      box-shadow: 0 22px 58px rgba(40, 59, 57, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.7);
     }
 
     .hero-copy {
@@ -286,6 +286,15 @@
       color: #fff;
       background: linear-gradient(135deg, var(--primary), var(--primary-deep));
       box-shadow: 0 16px 34px rgba(13, 139, 124, 0.24);
+    }
+
+    .hero-copy .btn-primary {
+      min-width: min(460px, 100%);
+      min-height: 72px;
+      font-size: 1.24rem;
+      padding: 0 34px;
+      border-radius: 20px;
+      box-shadow: 0 20px 42px rgba(13, 139, 124, 0.32);
     }
 
     .btn-secondary {
@@ -394,8 +403,9 @@
     }
 
     .footer-grid {
-      grid-template-columns: 1.2fr 0.9fr 0.9fr;
+      grid-template-columns: 1.2fr 1fr;
       align-items: start;
+      gap: 20px 28px;
     }
 
     .footer-copy h2 {
@@ -423,23 +433,25 @@
     .social-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 14px;
+      align-self: start;
+      justify-content: flex-start;
     }
 
     .social-link {
-      width: 46px;
-      height: 46px;
+      width: 62px;
+      height: 62px;
       justify-content: center;
-      border-radius: 14px;
+      border-radius: 18px;
       border: 1px solid rgba(28, 43, 42, 0.12);
-      background: rgba(255, 255, 255, 0.58);
+      background: rgba(255, 255, 255, 0.6);
       color: var(--primary-deep);
-      box-shadow: 0 10px 24px rgba(40, 59, 57, 0.1);
+      box-shadow: 0 14px 30px rgba(40, 59, 57, 0.16);
     }
 
     .social-link svg {
-      width: 18px;
-      height: 18px;
+      width: 24px;
+      height: 24px;
       display: block;
       fill: currentColor;
     }
@@ -541,6 +553,13 @@
 
       .btn {
         width: 100%;
+      }
+
+      .hero-copy .btn-primary {
+        min-width: 0;
+        min-height: 62px;
+        font-size: 1.05rem;
+        padding: 0 24px;
       }
 
       .services-grid {
