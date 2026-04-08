@@ -63,39 +63,6 @@
   }
   </script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Ce acte sunt necesare pentru RCA?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Datele necesare depind de masina si de proprietar. Trimite un mesaj si primesti imediat lista exacta de informatii."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Pot face totul online?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Da. Discutia, oferta si trimiterea documentelor se pot face online, oriunde in Romania."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Care este diferenta dintre RCA si CASCO?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "RCA este asigurarea obligatorie auto, iar CASCO ofera protectie suplimentara pentru alte riscuri legate de masina."
-        }
-      }
-    ]
-  }
-  </script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -240,9 +207,6 @@
     .nav-cta:hover,
     .btn:hover,
     .service-card:hover,
-    .feature:hover,
-    .step:hover,
-    .faq-card:hover,
     .social-link:hover {
       transform: translateY(-3px);
     }
@@ -264,10 +228,6 @@
     .hero-panel,
     .section-panel,
     .service-card,
-    .feature,
-    .step,
-    .trust-panel,
-    .faq-card,
     .footer-shell {
       border: 1px solid var(--line);
       background: var(--surface);
@@ -399,11 +359,7 @@
     .hero-card p,
     .hero-list li,
     .section-copy p,
-    .feature p,
     .service-card p,
-    .step p,
-    .trust-panel p,
-    .faq-card p,
     .footer-copy p {
       color: var(--muted);
       line-height: 1.7;
@@ -496,59 +452,20 @@
       margin-bottom: 12px;
     }
 
-    .grid-4,
-    .grid-3,
     .services-grid,
-    .steps-grid,
-    .faq-grid,
     .footer-grid {
       display: grid;
       gap: 18px;
     }
 
-    .grid-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .grid-3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .feature,
-    .service-card,
-    .step,
-    .faq-card,
-    .trust-panel {
+    .service-card {
       border-radius: 28px;
       padding: 24px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .feature strong,
-    .service-card h3,
-    .step h3,
-    .faq-card h3,
-    .trust-panel h2 {
-      display: block;
-      font-size: 1.12rem;
-      margin-bottom: 10px;
-    }
-
-    .feature-index,
-    .step-index {
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 18px;
-      border-radius: 14px;
-      background: rgba(13, 139, 124, 0.1);
-      color: var(--primary-deep);
-      font-weight: 800;
-    }
-
     .services-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .service-card h3 {
@@ -581,118 +498,6 @@
       font-weight: 800;
       color: var(--primary-deep);
       text-decoration: none;
-    }
-
-    .steps-grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .trust-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-      gap: 18px;
-    }
-
-    .trust-panel {
-      padding: 30px;
-    }
-
-    .trust-panel h2 {
-      font-size: clamp(2rem, 3vw, 2.7rem);
-      font-family: "Sora", sans-serif;
-      line-height: 1.05;
-      margin-bottom: 16px;
-    }
-
-    .trust-list {
-      list-style: none;
-      display: grid;
-      gap: 14px;
-      margin-top: 24px;
-    }
-
-    .trust-list li {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      color: var(--muted);
-      line-height: 1.7;
-    }
-
-    .trust-list span:first-child {
-      width: 26px;
-      height: 26px;
-      flex: 0 0 26px;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      background: rgba(13, 139, 124, 0.11);
-      color: var(--primary-deep);
-      font-weight: 800;
-    }
-
-    .trust-stats {
-      display: grid;
-      gap: 18px;
-    }
-
-    .stat-card {
-      border-radius: 28px;
-      padding: 26px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(251, 247, 237, 0.95));
-      border: 1px solid rgba(28, 43, 42, 0.1);
-      box-shadow: 0 18px 34px rgba(48, 63, 61, 0.1);
-    }
-
-    .stat-card strong {
-      display: block;
-      margin-bottom: 8px;
-      font-size: clamp(2rem, 4vw, 2.8rem);
-      font-family: "Sora", sans-serif;
-      line-height: 1;
-    }
-
-    .faq-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .faq-card h3 {
-      font-size: 1.15rem;
-    }
-
-    .cta-band {
-      margin-top: 28px;
-      padding: 34px;
-      border-radius: 36px;
-      background: linear-gradient(135deg, rgba(13, 139, 124, 0.95), rgba(8, 105, 93, 0.92));
-      color: #f8faf8;
-      box-shadow: 0 28px 60px rgba(8, 105, 93, 0.26);
-      animation: fade-up 0.75s ease both;
-    }
-
-    .cta-band h2 {
-      font-size: clamp(2rem, 4vw, 3.1rem);
-      margin-bottom: 12px;
-      max-width: 11ch;
-    }
-
-    .cta-band p {
-      max-width: 56ch;
-      line-height: 1.75;
-      color: rgba(248, 250, 248, 0.82);
-    }
-
-    .cta-band .btn-primary {
-      background: #fff;
-      color: var(--primary-deep);
-      box-shadow: none;
-    }
-
-    .cta-band .btn-secondary {
-      color: #fff;
-      background: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 255, 255, 0.2);
-      box-shadow: none;
     }
 
     .footer-shell {
@@ -759,19 +564,8 @@
 
     @media (max-width: 1080px) {
       .hero,
-      .trust-layout,
       .footer-grid {
         grid-template-columns: 1fr;
-      }
-
-      .grid-4,
-      .steps-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .services-grid,
-      .grid-3 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
@@ -802,7 +596,6 @@
       .hero-copy,
       .hero-panel,
       .section-panel,
-      .cta-band,
       .footer-shell {
         border-radius: 28px;
         padding: 24px;
@@ -812,9 +605,7 @@
         font-size: clamp(2.15rem, 10vw, 3.15rem);
       }
 
-      .section-copy h2,
-      .cta-band h2,
-      .trust-panel h2 {
+      .section-copy h2 {
         font-size: clamp(1.8rem, 8vw, 2.5rem);
       }
 
@@ -830,11 +621,7 @@
         width: 100%;
       }
 
-      .grid-4,
-      .grid-3,
-      .services-grid,
-      .steps-grid,
-      .faq-grid {
+      .services-grid {
         grid-template-columns: 1fr;
       }
 
@@ -853,8 +640,6 @@
 
       <nav class="nav-links" aria-label="Navigatie principala">
         <a href="#servicii">Servicii</a>
-        <a href="#cum-functioneaza">Cum functioneaza</a>
-        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -1007,140 +792,7 @@
               </a>
             </article>
 
-            <article class="service-card">
-              <div class="service-top">
-                <div>
-                  <h3>Asigurare de viata</h3>
-                </div>
-                <div class="service-icon">V</div>
-              </div>
-              <p>
-                Optiuni pentru protectia familiei si mai multa stabilitate, explicate simplu si clar.
-              </p>
-              <a class="service-link" href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta%20pentru%20asigurare%20de%20viata.">
-                Solicita oferta
-              </a>
-            </article>
-
-            <article class="service-card">
-              <div class="service-top">
-                <div>
-                  <h3>Alte asigurari</h3>
-                </div>
-                <div class="service-icon">+</div>
-              </div>
-              <p>
-                Daca ai nevoie de alt tip de polita, scrie-mi si vedem impreuna ce varianta ti se potriveste.
-              </p>
-              <a class="service-link" href="https://wa.me/40755741613?text=Buna%20ziua!%20Am%20nevoie%20de%20o%20oferta%20pentru%20alt%20tip%20de%20asigurare.">
-                Cere ajutor
-              </a>
-            </article>
           </div>
-        </div>
-      </section>
-
-      <section class="section" id="cum-functioneaza">
-        <div class="section-panel">
-          <div class="section-head">
-            <div class="section-copy">
-              <span class="section-tag">Proces</span>
-              <h2>Cum obtii oferta, fara batai de cap.</h2>
-              <p>
-                Totul este simplu si rapid.
-              </p>
-            </div>
-          </div>
-
-          <div class="steps-grid">
-            <article class="step">
-              <div class="step-index">1</div>
-              <h3>Imi scrii</h3>
-              <p>Ma contactezi pe WhatsApp sau Messenger si imi spui ce tip de asigurare te intereseaza.</p>
-            </article>
-
-            <article class="step">
-              <div class="step-index">2</div>
-              <h3>Iti explic ce ai nevoie</h3>
-              <p>Iti spun simplu ce informatii trebuie si raspund la intrebari fara termeni complicati.</p>
-            </article>
-
-            <article class="step">
-              <div class="step-index">3</div>
-              <h3>Alegem varianta potrivita</h3>
-              <p>Analizam optiunile si mergem pe o solutie potrivita pentru nevoile tale.</p>
-            </article>
-
-            <article class="step">
-              <div class="step-index">4</div>
-              <h3>Primesti polita online</h3>
-              <p>Dupa confirmare, documentele pot fi trimise rapid, direct online.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="faq">
-        <div class="section-panel">
-          <div class="section-head">
-            <div class="section-copy">
-              <span class="section-tag">FAQ</span>
-              <h2>Intrebari frecvente.</h2>
-              <p>Raspunsuri scurte la cele mai comune intrebari.</p>
-            </div>
-          </div>
-
-          <div class="faq-grid">
-            <article class="faq-card">
-              <h3>Ce acte sunt necesare pentru RCA?</h3>
-              <p>Datele necesare depind de masina si de proprietar. Trimite un mesaj si primesti imediat lista exacta.</p>
-            </article>
-
-            <article class="faq-card">
-              <h3>Pot face totul online?</h3>
-              <p>Da. Discutia, oferta si trimiterea documentelor se pot face online, oriunde in Romania.</p>
-            </article>
-
-            <article class="faq-card">
-              <h3>Cat dureaza emiterea politei?</h3>
-              <p>De multe ori raspunsul vine rapid, iar durata depinde de tipul asigurarii si de datele primite.</p>
-            </article>
-
-            <article class="faq-card">
-              <h3>Care este diferenta dintre RCA si CASCO?</h3>
-              <p>RCA este asigurarea obligatorie auto, iar CASCO ofera protectie suplimentara pentru alte riscuri legate de masina.</p>
-            </article>
-
-            <article class="faq-card">
-              <h3>Daca nu stiu exact ce asigurare imi trebuie?</h3>
-              <p>Imi scrii direct si te ajut sa intelegi ce varianta poate fi mai potrivita pentru tine.</p>
-            </article>
-
-            <article class="faq-card">
-              <h3>Pot solicita oferta daca sunt din alt oras?</h3>
-              <p>Da. Lucrez online si te pot ajuta oriunde in Romania, fara sa fie nevoie sa te deplasezi.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta-band" aria-label="Apel la actiune final">
-        <h2>Vrei o oferta rapida si fara complicatii?</h2>
-        <p>
-          Scrie-mi direct pe WhatsApp sau Messenger si te ajut sa alegi o varianta potrivita,
-          simplu, clar si rapid.
-        </p>
-
-        <div class="cta-group">
-          <a
-            class="btn btn-primary"
-            href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta%20de%20asigurare."
-          >
-            Trimite mesaj pe WhatsApp
-          </a>
-          <a class="btn btn-secondary" href="https://m.me/216347464903074">
-            Scrie pe Messenger
-          </a>
         </div>
       </section>
     </main>
