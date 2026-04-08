@@ -1,4 +1,4 @@
-Conversation Log
+﻿Conversation Log
 Project: DestineBroker
 Date: 2026-04-08
 
@@ -226,3 +226,4 @@ Latest Known Direction:
 - Logo should be clearly visible.
 - Client-facing copy must be simple, no internal SEO/service explanations.
 - SEO should stay in metadata, structure, FAQ, sitemap, robots, and later separate pages for RCA and CASCO.
+
