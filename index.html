@@ -220,14 +220,13 @@
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+      grid-template-columns: 1fr;
       gap: 28px;
       align-items: stretch;
       margin-top: 28px;
     }
 
     .hero-copy,
-    .hero-panel,
     .section-panel,
     .service-card,
     .footer-shell {
@@ -321,97 +320,12 @@
       box-shadow: 0 16px 30px rgba(31, 47, 44, 0.08);
     }
 
-    .trust-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 28px;
-    }
-
-    .trust-pill {
-      padding: 11px 14px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.76);
-      border: 1px solid rgba(28, 43, 42, 0.1);
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--text);
-    }
-
-    .hero-panel {
-      border-radius: 40px;
-      padding: 28px;
-      display: grid;
-      gap: 18px;
-      animation: fade-up 0.8s 0.16s ease both;
-    }
-
-    .hero-card {
-      border-radius: 28px;
-      padding: 24px;
-      background: var(--surface-strong);
-      border: 1px solid rgba(28, 43, 42, 0.08);
-    }
-
-    .hero-card h2 {
-      font-size: 1.45rem;
-      margin-bottom: 12px;
-    }
-
     .hero-card p,
-    .hero-list li,
     .section-copy p,
     .service-card p,
     .footer-copy p {
       color: var(--muted);
       line-height: 1.7;
-    }
-
-    .hero-list {
-      list-style: none;
-      display: grid;
-      gap: 12px;
-      margin-top: 18px;
-    }
-
-    .hero-list li {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-    }
-
-    .icon-badge {
-      width: 38px;
-      height: 38px;
-      flex: 0 0 38px;
-      display: grid;
-      place-items: center;
-      border-radius: 14px;
-      background: rgba(13, 139, 124, 0.1);
-      color: var(--primary-deep);
-    }
-
-    .hero-note {
-      padding: 18px 20px;
-      border-radius: 24px;
-      background: linear-gradient(135deg, rgba(240, 179, 95, 0.2), rgba(255, 255, 255, 0.85));
-      border: 1px solid rgba(240, 179, 95, 0.24);
-    }
-
-    .hero-mini-cta {
-      margin-top: 18px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: 800;
-      color: var(--primary-deep);
-      text-decoration: none;
-    }
-
-    .hero-note strong {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 1rem;
     }
 
     .section {
@@ -480,16 +394,6 @@
       justify-content: space-between;
       gap: 12px;
       margin-bottom: 18px;
-    }
-
-    .service-icon {
-      width: 56px;
-      height: 56px;
-      display: grid;
-      place-items: center;
-      border-radius: 20px;
-      background: linear-gradient(135deg, rgba(13, 139, 124, 0.13), rgba(240, 179, 95, 0.16));
-      font-size: 1.5rem;
     }
 
     .service-link {
@@ -638,7 +542,6 @@
       }
 
       .hero-copy,
-      .hero-panel,
       .section-panel,
       .footer-shell {
         border-radius: 28px;
@@ -696,7 +599,7 @@
       <section class="hero" aria-label="Introducere">
         <div class="hero-copy">
           <span class="eyebrow">Asigurari online in Romania</span>
-          <h1>Asigurari simple si rapide.</h1>
+          <h1>Asigurari online</h1>
           <p>
             RCA, CASCO, locuinta si calatorie, cu raspuns rapid si sprijin personal,
             oriunde in Romania.
@@ -719,46 +622,7 @@
             </a>
           </div>
 
-          <div class="trust-pills" aria-label="Avantaje principale">
-            <span class="trust-pill">Broker Destine</span>
-            <span class="trust-pill">Polite online</span>
-            <span class="trust-pill">Raspuns rapid</span>
-            <span class="trust-pill">Suport personal</span>
-          </div>
         </div>
-
-        <aside class="hero-panel" aria-label="Beneficii rapide">
-          <div class="hero-card">
-            <h2>Ai nevoie de o asigurare? Te ajut rapid.</h2>
-            <p>
-              Scrii direct, primesti raspuns rapid si rezolvam totul simplu.
-            </p>
-
-            <ul class="hero-list">
-              <li>
-                <span class="icon-badge">01</span>
-                <span>Scrii direct pe WhatsApp sau Messenger.</span>
-              </li>
-              <li>
-                <span class="icon-badge">02</span>
-                <span>Primesti explicatii clare si varianta potrivita.</span>
-              </li>
-              <li>
-                <span class="icon-badge">03</span>
-                <span>Primesti polita online, oriunde in Romania.</span>
-              </li>
-            </ul>
-
-            <a class="hero-mini-cta" href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta%20de%20asigurare.">
-              Scrie acum pe WhatsApp
-            </a>
-          </div>
-
-          <div class="hero-note">
-            <strong>Servicii principale</strong>
-            RCA, CASCO, locuinta, calatorie si alte polite.
-          </div>
-        </aside>
       </section>
 
       <section class="section" id="servicii">
@@ -767,9 +631,6 @@
             <div class="section-copy">
               <span class="section-tag">Servicii</span>
               <h2>Tipuri de asigurari pe care le poti solicita.</h2>
-              <p>
-                Alege serviciul care te intereseaza si scrie-mi direct pentru oferta.
-              </p>
             </div>
           </div>
 
@@ -779,7 +640,6 @@
                 <div>
                   <h3>RCA online</h3>
                 </div>
-                <div class="service-icon">R</div>
               </div>
               <p>
                 Asigurare obligatorie auto, obtinuta simplu si rapid, cu indrumare clara si proces
@@ -795,7 +655,6 @@
                 <div>
                   <h3>CASCO</h3>
                 </div>
-                <div class="service-icon">C</div>
               </div>
               <p>
                 Protectie suplimentara pentru masina ta, explicata pe inteles si adaptata nevoilor
@@ -811,7 +670,6 @@
                 <div>
                   <h3>Asigurare locuinta</h3>
                 </div>
-                <div class="service-icon">L</div>
               </div>
               <p>
                 Protectie pentru casa sau apartament, cu explicatii clare si pasii necesari simplificati.
@@ -826,7 +684,6 @@
                 <div>
                   <h3>Asigurare de calatorie</h3>
                 </div>
-                <div class="service-icon">T</div>
               </div>
               <p>
                 Solutie utila pentru vacante si deplasari, cu emitere online si ajutor clar la alegere.
