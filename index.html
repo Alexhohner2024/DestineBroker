@@ -41,7 +41,7 @@
     "name": "Destine Broker",
     "description": "Asigurari online pentru RCA, CASCO, locuinta, calatorie si alte polite, cu suport personal oriunde in Romania.",
     "url": "https://alexhohner2024.github.io/DestineBroker/",
-    "logo": "https://alexhohner2024.github.io/DestineBroker/logo.svg",
+    "logo": "https://alexhohner2024.github.io/DestineBroker/destine-logo.webp",
     "telephone": "+40755741613",
     "email": "destine0755741613@gmail.com",
     "areaServed": {
@@ -99,7 +99,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
     rel="stylesheet"
   />
 
@@ -197,14 +197,11 @@
     }
 
     .brand-mark {
-      width: 44px;
-      height: 44px;
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
-      color: #fff;
-      background: linear-gradient(145deg, var(--primary), var(--primary-deep));
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+      width: auto;
+      height: 42px;
+      border-radius: 0;
+      display: block;
+      object-fit: contain;
     }
 
     .nav-links {
@@ -309,7 +306,7 @@
     h1,
     h2,
     h3 {
-      font-family: "Fraunces", serif;
+      font-family: "Sora", sans-serif;
       line-height: 1;
       letter-spacing: -0.03em;
     }
@@ -590,7 +587,7 @@
 
     .trust-panel h2 {
       font-size: clamp(2rem, 3vw, 2.7rem);
-      font-family: "Fraunces", serif;
+      font-family: "Sora", sans-serif;
       line-height: 1.05;
       margin-bottom: 16px;
     }
@@ -639,7 +636,7 @@
       display: block;
       margin-bottom: 8px;
       font-size: clamp(2rem, 4vw, 2.8rem);
-      font-family: "Fraunces", serif;
+      font-family: "Sora", sans-serif;
       line-height: 1;
     }
 
@@ -834,7 +831,7 @@
   <div class="page">
     <header class="site-nav">
       <a class="brand" href="#top" aria-label="Destine Broker">
-        <span class="brand-mark">DB</span>
+        <img class="brand-mark" src="destine-logo.webp" alt="Destine Broker" />
         <span>Destine Broker</span>
       </a>
 
@@ -888,72 +885,33 @@
 
         <aside class="hero-panel" aria-label="Beneficii rapide">
           <div class="hero-card">
-            <h2>Totul gandit ca sa iti fie usor</h2>
+            <h2>Ai nevoie de o asigurare? Te ajut rapid.</h2>
             <p>
-              Daca vrei sa obtii o asigurare fara stres si fara sa pierzi timp, aici gasesti o
-              varianta simpla, clara si orientata spre rezultat.
+              Comunicarea este simpla, procesul este online, iar tu primesti ajutor clar
+              fara batai de cap.
             </p>
 
             <ul class="hero-list">
               <li>
                 <span class="icon-badge">01</span>
-                <span>Comunicare directa pe WhatsApp sau Messenger, fara pasi inutili.</span>
+                <span>Scrii direct pe WhatsApp sau Messenger.</span>
               </li>
               <li>
                 <span class="icon-badge">02</span>
-                <span>Explicatii clare pentru RCA, CASCO si alte tipuri de polite.</span>
+                <span>Primesti explicatii clare si varianta potrivita.</span>
               </li>
               <li>
                 <span class="icon-badge">03</span>
-                <span>Proces online, util oriunde in Romania.</span>
+                <span>Primesti polita online, oriunde in Romania.</span>
               </li>
             </ul>
           </div>
 
           <div class="hero-note">
-            <strong>Ce poti solicita rapid</strong>
-            RCA online, CASCO, asigurare de locuinta, asigurare de calatorie si alte polite,
-            in functie de nevoile tale.
+            <strong>Servicii principale</strong>
+            RCA, CASCO, locuinta, calatorie si alte polite.
           </div>
         </aside>
-      </section>
-
-      <section class="section">
-        <div class="section-panel">
-          <div class="section-head">
-            <div class="section-copy">
-              <span class="section-tag">Avantaje</span>
-              <h2>Mai putin stres, mai multa claritate.</h2>
-              <p>
-                Structura site-ului si felul in care lucram sunt gandite pentru clienti care vor
-                sa rezolve repede, sa inteleaga usor si sa primeasca ajutor real.
-              </p>
-            </div>
-          </div>
-
-          <div class="grid-4">
-            <article class="feature">
-              <div class="feature-index">01</div>
-              <strong>Rapid</strong>
-              <p>Primesti raspuns intr-un timp scurt si mergem direct la ce ai nevoie.</p>
-            </article>
-            <article class="feature">
-              <div class="feature-index">02</div>
-              <strong>Simplu</strong>
-              <p>Fara formulare complicate si fara sa pierzi timp cu pasi inutili.</p>
-            </article>
-            <article class="feature">
-              <div class="feature-index">03</div>
-              <strong>Online</strong>
-              <p>Poti cere oferta si primi documentele de oriunde din Romania.</p>
-            </article>
-            <article class="feature">
-              <div class="feature-index">04</div>
-              <strong>Cu suport personal</strong>
-              <p>Discuti direct cu o persoana care te ajuta sa alegi varianta potrivita.</p>
-            </article>
-          </div>
-        </div>
       </section>
 
       <section class="section" id="servicii">
@@ -963,9 +921,7 @@
               <span class="section-tag">Servicii</span>
               <h2>Tipuri de asigurari pe care le poti solicita.</h2>
               <p>
-                Pagina este construita in jurul celor mai cautate servicii din Google, astfel
-                incat clientii sa gaseasca rapid informatia de care au nevoie pentru RCA, CASCO,
-                asigurare auto, locuinta sau calatorie.
+                Alege serviciul care te intereseaza si scrie-mi direct pentru oferta.
               </p>
             </div>
           </div>
@@ -1073,8 +1029,7 @@
               <span class="section-tag">Proces</span>
               <h2>Cum obtii oferta, fara batai de cap.</h2>
               <p>
-                O pagina buna de vanzare trebuie sa explice rapid ce are de facut clientul.
-                De aceea procesul este redus la pasi usor de urmarit.
+                Totul este simplu si rapid.
               </p>
             </div>
           </div>
@@ -1107,61 +1062,13 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="trust-layout">
-          <div class="trust-panel">
-            <span class="section-tag">Incredere</span>
-            <h2>Sprijin sub brandul Destine Broker.</h2>
-            <p>
-              Lucrez sub brandul Destine Broker si construiesc experienta site-ului in jurul unei idei
-              simple: clientul trebuie sa inteleaga repede, sa actioneze usor si sa primeasca sprijin real.
-            </p>
-
-            <ul class="trust-list">
-              <li>
-                <span>✓</span>
-                <span>Comunicare directa, fara trasee complicate si fara asteptare inutila.</span>
-              </li>
-              <li>
-                <span>✓</span>
-                <span>Explicatii clare pentru RCA, CASCO si alte polite cautate frecvent in Google.</span>
-              </li>
-              <li>
-                <span>✓</span>
-                <span>Proces online, usor de folosit pe telefon, tableta sau desktop.</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="trust-stats">
-            <article class="stat-card">
-              <strong>100% online</strong>
-              <p>Pagina este gandita pentru clienti din toata Romania, fara dependenta de un oras anume.</p>
-            </article>
-
-            <article class="stat-card">
-              <strong>2 CTA clare</strong>
-              <p>WhatsApp si Messenger sunt plasate in pozitii cheie pentru a creste sansele de contact.</p>
-            </article>
-
-            <article class="stat-card">
-              <strong>SEO util</strong>
-              <p>Continutul acopera cautari importante precum RCA online, CASCO online si asigurari online Romania.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section class="section" id="faq">
         <div class="section-panel">
           <div class="section-head">
             <div class="section-copy">
               <span class="section-tag">FAQ</span>
-              <h2>Intrebari frecvente care ajuta si clientii, si Google.</h2>
-              <p>
-                Acest bloc raspunde la intrebarile obisnuite ale clientilor si intareste relevanta
-                paginii pentru cautari comerciale si informationale.
-              </p>
+              <h2>Intrebari frecvente.</h2>
+              <p>Raspunsuri scurte la cele mai comune intrebari.</p>
             </div>
           </div>
 
