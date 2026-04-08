@@ -190,15 +190,14 @@
     .brand {
       display: inline-flex;
       align-items: center;
-      gap: 12px;
-      font-weight: 800;
-      letter-spacing: 0.01em;
       text-decoration: none;
+      flex-shrink: 0;
     }
 
     .brand-mark {
       width: auto;
-      height: 42px;
+      height: 60px;
+      max-width: 240px;
       border-radius: 0;
       display: block;
       object-fit: contain;
@@ -774,6 +773,11 @@
         border-radius: 28px;
       }
 
+      .brand-mark {
+        height: 48px;
+        max-width: 190px;
+      }
+
       .nav-links {
         display: none;
       }
@@ -832,7 +836,6 @@
     <header class="site-nav">
       <a class="brand" href="#top" aria-label="Destine Broker">
         <img class="brand-mark" src="destine-logo.webp" alt="Destine Broker" />
-        <span>Destine Broker</span>
       </a>
 
       <nav class="nav-links" aria-label="Navigatie principala">
