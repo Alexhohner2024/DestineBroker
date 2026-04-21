@@ -141,6 +141,57 @@
       padding: 24px 0 72px;
     }
 
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      width: var(--bubble-width);
+      margin: 0 auto 18px;
+      padding: 12px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.82);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(26px) saturate(165%);
+      box-shadow: 0 16px 40px rgba(46, 61, 59, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+      animation: fade-up 0.65s ease both;
+    }
+
+    .topbar-group {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .topbar-link,
+    .topbar-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .topbar-link:hover {
+      color: var(--text);
+    }
+
+    .topbar-icon {
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(240, 179, 95, 0.16);
+      color: var(--primary-deep);
+      font-size: 0.92rem;
+      flex-shrink: 0;
+    }
+
     .site-nav {
       display: flex;
       align-items: center;
@@ -520,6 +571,22 @@
         border-radius: 28px;
       }
 
+      .topbar {
+        padding: 14px 16px;
+        border-radius: 28px;
+      }
+
+      .topbar,
+      .topbar-group {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .topbar-link,
+      .topbar-label {
+        font-size: 0.92rem;
+      }
+
       .brand-mark {
         width: auto;
         height: 94px;
@@ -574,6 +641,29 @@
 </head>
 <body>
   <div class="page">
+    <div class="topbar" aria-label="Contact rapid">
+      <div class="topbar-group">
+        <span class="topbar-label">
+          <span class="topbar-icon">RO</span>
+          Romania
+        </span>
+        <a class="topbar-link" href="mailto:destine0755741613@gmail.com">
+          <span class="topbar-icon">@</span>
+          destine0755741613@gmail.com
+        </a>
+        <a class="topbar-link" href="tel:+40755741613">
+          <span class="topbar-icon">✆</span>
+          +40 755 741 613
+        </a>
+      </div>
+      <div class="topbar-group">
+        <a class="topbar-link" href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta.">
+          <span class="topbar-icon">WA</span>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
     <header class="site-nav">
       <a class="brand" href="#top" aria-label="Destine Broker">
         <img class="brand-mark" src="destine-logo.webp" alt="Destine Broker" />

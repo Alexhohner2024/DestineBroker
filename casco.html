@@ -112,6 +112,42 @@
     }
     a { color: inherit; }
     .page { width: min(var(--container), calc(100% - 28px)); margin: 0 auto; padding: 24px 0 72px; }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 12px 18px;
+      margin-bottom: 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      backdrop-filter: blur(22px) saturate(150%);
+      box-shadow: var(--shadow);
+    }
+    .topbar-group { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; }
+    .topbar-link, .topbar-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.94rem;
+    }
+    .topbar-link:hover { color: var(--text); }
+    .topbar-icon {
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(240, 179, 95, 0.16);
+      color: var(--primary-deep);
+      font-size: 0.92rem;
+      flex-shrink: 0;
+    }
     .nav, .hero, .panel, .cta-band, .footer {
       border: 1px solid var(--line);
       background: var(--surface);
@@ -272,6 +308,7 @@
     .crumbs a { text-decoration: none; }
     @media (max-width: 860px) {
       .hero, .cards, .faq { grid-template-columns: 1fr; }
+      .topbar, .topbar-group { flex-direction: column; align-items: flex-start; border-radius: 28px; }
       .nav { flex-direction: column; border-radius: 28px; }
       .nav-links { flex-wrap: wrap; justify-content: center; }
       .brand img { height: 58px; }
@@ -281,6 +318,17 @@
 </head>
 <body>
   <div class="page">
+    <div class="topbar" aria-label="Contact rapid">
+      <div class="topbar-group">
+        <span class="topbar-label"><span class="topbar-icon">RO</span>Romania</span>
+        <a class="topbar-link" href="mailto:destine0755741613@gmail.com"><span class="topbar-icon">@</span>destine0755741613@gmail.com</a>
+        <a class="topbar-link" href="tel:+40755741613"><span class="topbar-icon">✆</span>+40 755 741 613</a>
+      </div>
+      <div class="topbar-group">
+        <a class="topbar-link" href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta%20CASCO."><span class="topbar-icon">WA</span>WhatsApp</a>
+      </div>
+    </div>
+
     <header class="nav">
       <a class="brand" href="index.html" aria-label="Destine Broker">
         <img src="destine-logo.webp" alt="Destine Broker" />
