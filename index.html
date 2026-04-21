@@ -142,10 +142,10 @@
     }
 
     .topbar {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       align-items: center;
-      justify-content: space-between;
-      gap: 16px;
+      gap: 12px;
       width: var(--bubble-width);
       margin: 0 auto 18px;
       padding: 12px 18px;
@@ -157,17 +157,11 @@
       animation: fade-up 0.65s ease both;
     }
 
-    .topbar-group {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 18px;
-    }
-
     .topbar-link,
     .topbar-label {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 10px;
       color: var(--muted);
       font-size: 0.94rem;
@@ -198,7 +192,7 @@
       justify-content: center;
       width: var(--bubble-width);
       margin: 0 auto;
-      padding: 12px 24px;
+      padding: 8px 18px;
       border: 1px solid rgba(255, 255, 255, 0.82);
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.44);
@@ -213,14 +207,14 @@
       justify-content: center;
       text-decoration: none;
       flex-shrink: 0;
-      width: min(90%, 900px);
+      width: min(74%, 620px);
     }
 
     .brand-mark {
       width: 100%;
       height: auto;
       max-width: 100%;
-      max-height: 285px;
+      max-height: 145px;
       border-radius: 0;
       display: block;
       object-fit: contain;
@@ -572,12 +566,12 @@
       }
 
       .topbar {
+        display: flex;
         padding: 14px 16px;
         border-radius: 28px;
       }
 
-      .topbar,
-      .topbar-group {
+      .topbar {
         flex-direction: column;
         align-items: flex-start;
       }
@@ -585,11 +579,12 @@
       .topbar-link,
       .topbar-label {
         font-size: 0.92rem;
+        justify-content: flex-start;
       }
 
       .brand-mark {
         width: auto;
-        height: 94px;
+        height: 82px;
         max-width: 240px;
         max-height: none;
       }
@@ -642,26 +637,22 @@
 <body>
   <div class="page">
     <div class="topbar" aria-label="Contact rapid">
-      <div class="topbar-group">
-        <span class="topbar-label">
-          <span class="topbar-icon">RO</span>
-          Romania
-        </span>
-        <a class="topbar-link" href="mailto:destine0755741613@gmail.com">
-          <span class="topbar-icon">@</span>
-          destine0755741613@gmail.com
-        </a>
-        <a class="topbar-link" href="tel:+40755741613">
-          <span class="topbar-icon">✆</span>
-          +40 755 741 613
-        </a>
-      </div>
-      <div class="topbar-group">
-        <a class="topbar-link" href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta.">
-          <span class="topbar-icon">WA</span>
-          WhatsApp
-        </a>
-      </div>
+      <span class="topbar-label">
+        <span class="topbar-icon">RO</span>
+        Romania
+      </span>
+      <a class="topbar-link" href="mailto:destine0755741613@gmail.com">
+        <span class="topbar-icon">@</span>
+        destine0755741613@gmail.com
+      </a>
+      <a class="topbar-link" href="tel:+40755741613">
+        <span class="topbar-icon">✆</span>
+        +40 755 741 613
+      </a>
+      <a class="topbar-link" href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta.">
+        <span class="topbar-icon">WA</span>
+        WhatsApp
+      </a>
     </div>
 
     <header class="site-nav">
