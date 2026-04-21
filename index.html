@@ -63,39 +63,6 @@
   }
   </script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Ce acte sunt necesare pentru RCA?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Datele necesare depind de masina si de proprietar. Trimite un mesaj si primesti imediat lista exacta de informatii."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Pot face totul online?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Da. Discutia, oferta si trimiterea documentelor se pot face online, oriunde in Romania."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Care este diferenta dintre RCA si CASCO?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "RCA este asigurarea obligatorie auto, iar CASCO ofera protectie suplimentara pentru alte riscuri legate de masina."
-        }
-      }
-    ]
-  }
-  </script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -107,11 +74,11 @@
     :root {
       --bg: #f7f4ec;
       --bg-soft: #fffdf8;
-      --surface: rgba(255, 252, 245, 0.88);
+      --surface: rgba(255, 255, 255, 0.4);
       --surface-strong: #ffffff;
       --text: #1c2b2a;
       --muted: #5f716d;
-      --line: rgba(28, 43, 42, 0.1);
+      --line: rgba(255, 255, 255, 0.68);
       --primary: #0d8b7c;
       --primary-deep: #08695d;
       --accent: #f0b35f;
@@ -120,6 +87,7 @@
       --radius-lg: 24px;
       --radius-md: 18px;
       --container: 1180px;
+      --bubble-width: min(980px, 100%);
     }
 
     * {
@@ -176,108 +144,74 @@
     .site-nav {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      padding: 10px 18px;
-      border: 1px solid var(--line);
+      justify-content: center;
+      width: var(--bubble-width);
+      margin: 0 auto;
+      padding: 12px 24px;
+      border: 1px solid rgba(255, 255, 255, 0.82);
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(12px);
-      box-shadow: 0 12px 32px rgba(46, 61, 59, 0.08);
+      background: rgba(255, 255, 255, 0.44);
+      backdrop-filter: blur(26px) saturate(165%);
+      box-shadow: 0 18px 44px rgba(46, 61, 59, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.65);
       animation: fade-up 0.7s ease both;
     }
 
     .brand {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       text-decoration: none;
       flex-shrink: 0;
-      flex: 0 0 360px;
+      width: min(90%, 900px);
     }
 
     .brand-mark {
-      width: auto;
-      height: 110px;
+      width: 100%;
+      height: auto;
       max-width: 100%;
+      max-height: 285px;
       border-radius: 0;
       display: block;
       object-fit: contain;
     }
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      color: var(--muted);
-      font-size: 0.88rem;
-      margin-left: auto;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--text);
-    }
-
-    .nav-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 14px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.95rem;
-      color: #fff;
-      background: linear-gradient(135deg, var(--primary), var(--primary-deep));
-      box-shadow: 0 12px 30px rgba(13, 139, 124, 0.24);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .nav-cta:hover,
     .btn:hover,
     .service-card:hover,
-    .feature:hover,
-    .step:hover,
-    .faq-card:hover,
     .social-link:hover {
       transform: translateY(-3px);
     }
 
-    .nav-cta:hover,
     .btn:hover {
-      box-shadow: 0 18px 36px rgba(13, 139, 124, 0.28);
+      box-shadow: 0 18px 36px rgba(13, 139, 124, 0.3);
     }
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+      grid-template-columns: 1fr;
       gap: 28px;
       align-items: stretch;
       margin-top: 28px;
     }
 
     .hero-copy,
-    .hero-panel,
     .section-panel,
     .service-card,
-    .feature,
-    .step,
-    .trust-panel,
-    .faq-card,
     .footer-shell {
       border: 1px solid var(--line);
       background: var(--surface);
-      backdrop-filter: blur(12px);
-      box-shadow: var(--shadow);
+      backdrop-filter: blur(24px) saturate(155%);
+      box-shadow: 0 22px 58px rgba(40, 59, 57, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.7);
     }
 
     .hero-copy {
+      width: var(--bubble-width);
+      margin: 0 auto;
       border-radius: 40px;
       padding: 36px 38px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
       animation: fade-up 0.8s 0.08s ease both;
     }
 
@@ -316,11 +250,12 @@
     h1 {
       font-size: clamp(2.6rem, 5vw, 4.2rem);
       margin-bottom: 18px;
-      max-width: 10ch;
+      max-width: none;
+      white-space: nowrap;
     }
 
     .hero-copy p {
-      max-width: 48ch;
+      max-width: 42ch;
       font-size: 1rem;
       line-height: 1.65;
       color: var(--muted);
@@ -329,6 +264,7 @@
     .cta-group {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 14px;
       margin-top: 22px;
     }
@@ -352,6 +288,15 @@
       box-shadow: 0 16px 34px rgba(13, 139, 124, 0.24);
     }
 
+    .hero-copy .btn-primary {
+      min-width: min(460px, 100%);
+      min-height: 72px;
+      font-size: 1.24rem;
+      padding: 0 34px;
+      border-radius: 20px;
+      box-shadow: 0 20px 42px rgba(13, 139, 124, 0.32);
+    }
+
     .btn-secondary {
       color: var(--text);
       background: rgba(255, 255, 255, 0.9);
@@ -359,101 +304,12 @@
       box-shadow: 0 16px 30px rgba(31, 47, 44, 0.08);
     }
 
-    .trust-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 28px;
-    }
-
-    .trust-pill {
-      padding: 11px 14px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.76);
-      border: 1px solid rgba(28, 43, 42, 0.1);
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--text);
-    }
-
-    .hero-panel {
-      border-radius: 40px;
-      padding: 28px;
-      display: grid;
-      gap: 18px;
-      animation: fade-up 0.8s 0.16s ease both;
-    }
-
-    .hero-card {
-      border-radius: 28px;
-      padding: 24px;
-      background: var(--surface-strong);
-      border: 1px solid rgba(28, 43, 42, 0.08);
-    }
-
-    .hero-card h2 {
-      font-size: 1.45rem;
-      margin-bottom: 12px;
-    }
-
     .hero-card p,
-    .hero-list li,
     .section-copy p,
-    .feature p,
     .service-card p,
-    .step p,
-    .trust-panel p,
-    .faq-card p,
     .footer-copy p {
       color: var(--muted);
       line-height: 1.7;
-    }
-
-    .hero-list {
-      list-style: none;
-      display: grid;
-      gap: 12px;
-      margin-top: 18px;
-    }
-
-    .hero-list li {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-    }
-
-    .icon-badge {
-      width: 38px;
-      height: 38px;
-      flex: 0 0 38px;
-      display: grid;
-      place-items: center;
-      border-radius: 14px;
-      background: rgba(13, 139, 124, 0.1);
-      color: var(--primary-deep);
-    }
-
-    .hero-note {
-      padding: 18px 20px;
-      border-radius: 24px;
-      background: linear-gradient(135deg, rgba(240, 179, 95, 0.2), rgba(255, 255, 255, 0.85));
-      border: 1px solid rgba(240, 179, 95, 0.24);
-    }
-
-    .hero-mini-cta {
-      margin-top: 18px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: 800;
-      color: var(--primary-deep);
-      text-decoration: none;
-    }
-
-    .hero-note strong {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 1rem;
     }
 
     .section {
@@ -461,6 +317,8 @@
     }
 
     .section-panel {
+      width: var(--bubble-width);
+      margin: 0 auto;
       border-radius: 36px;
       padding: 38px;
       animation: fade-up 0.75s ease both;
@@ -496,59 +354,20 @@
       margin-bottom: 12px;
     }
 
-    .grid-4,
-    .grid-3,
     .services-grid,
-    .steps-grid,
-    .faq-grid,
     .footer-grid {
       display: grid;
       gap: 18px;
     }
 
-    .grid-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .grid-3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .feature,
-    .service-card,
-    .step,
-    .faq-card,
-    .trust-panel {
+    .service-card {
       border-radius: 28px;
       padding: 24px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .feature strong,
-    .service-card h3,
-    .step h3,
-    .faq-card h3,
-    .trust-panel h2 {
-      display: block;
-      font-size: 1.12rem;
-      margin-bottom: 10px;
-    }
-
-    .feature-index,
-    .step-index {
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 18px;
-      border-radius: 14px;
-      background: rgba(13, 139, 124, 0.1);
-      color: var(--primary-deep);
-      font-weight: 800;
-    }
-
     .services-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .service-card h3 {
@@ -563,16 +382,6 @@
       margin-bottom: 18px;
     }
 
-    .service-icon {
-      width: 56px;
-      height: 56px;
-      display: grid;
-      place-items: center;
-      border-radius: 20px;
-      background: linear-gradient(135deg, rgba(13, 139, 124, 0.13), rgba(240, 179, 95, 0.16));
-      font-size: 1.5rem;
-    }
-
     .service-link {
       margin-top: 18px;
       display: inline-flex;
@@ -583,128 +392,20 @@
       text-decoration: none;
     }
 
-    .steps-grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .trust-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-      gap: 18px;
-    }
-
-    .trust-panel {
-      padding: 30px;
-    }
-
-    .trust-panel h2 {
-      font-size: clamp(2rem, 3vw, 2.7rem);
-      font-family: "Sora", sans-serif;
-      line-height: 1.05;
-      margin-bottom: 16px;
-    }
-
-    .trust-list {
-      list-style: none;
-      display: grid;
-      gap: 14px;
-      margin-top: 24px;
-    }
-
-    .trust-list li {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      color: var(--muted);
-      line-height: 1.7;
-    }
-
-    .trust-list span:first-child {
-      width: 26px;
-      height: 26px;
-      flex: 0 0 26px;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      background: rgba(13, 139, 124, 0.11);
-      color: var(--primary-deep);
-      font-weight: 800;
-    }
-
-    .trust-stats {
-      display: grid;
-      gap: 18px;
-    }
-
-    .stat-card {
-      border-radius: 28px;
-      padding: 26px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(251, 247, 237, 0.95));
-      border: 1px solid rgba(28, 43, 42, 0.1);
-      box-shadow: 0 18px 34px rgba(48, 63, 61, 0.1);
-    }
-
-    .stat-card strong {
-      display: block;
-      margin-bottom: 8px;
-      font-size: clamp(2rem, 4vw, 2.8rem);
-      font-family: "Sora", sans-serif;
-      line-height: 1;
-    }
-
-    .faq-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .faq-card h3 {
-      font-size: 1.15rem;
-    }
-
-    .cta-band {
-      margin-top: 28px;
-      padding: 34px;
-      border-radius: 36px;
-      background: linear-gradient(135deg, rgba(13, 139, 124, 0.95), rgba(8, 105, 93, 0.92));
-      color: #f8faf8;
-      box-shadow: 0 28px 60px rgba(8, 105, 93, 0.26);
-      animation: fade-up 0.75s ease both;
-    }
-
-    .cta-band h2 {
-      font-size: clamp(2rem, 4vw, 3.1rem);
-      margin-bottom: 12px;
-      max-width: 11ch;
-    }
-
-    .cta-band p {
-      max-width: 56ch;
-      line-height: 1.75;
-      color: rgba(248, 250, 248, 0.82);
-    }
-
-    .cta-band .btn-primary {
-      background: #fff;
-      color: var(--primary-deep);
-      box-shadow: none;
-    }
-
-    .cta-band .btn-secondary {
-      color: #fff;
-      background: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 255, 255, 0.2);
-      box-shadow: none;
-    }
-
     .footer-shell {
+      width: var(--bubble-width);
       margin-top: 28px;
+      margin-left: auto;
+      margin-right: auto;
       border-radius: 36px;
       padding: 34px;
       animation: fade-up 0.8s ease both;
     }
 
     .footer-grid {
-      grid-template-columns: 1.2fr 0.9fr 0.9fr;
+      grid-template-columns: 1.2fr 1fr;
       align-items: start;
+      gap: 20px 28px;
     }
 
     .footer-copy h2 {
@@ -729,8 +430,50 @@
       transition: transform 0.2s ease, color 0.2s ease;
     }
 
-    .footer-links a:hover,
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-self: start;
+      justify-content: flex-start;
+    }
+
+    .social-link {
+      width: 62px;
+      height: 62px;
+      justify-content: center;
+      border-radius: 18px;
+      border: 1px solid rgba(28, 43, 42, 0.12);
+      background: rgba(255, 255, 255, 0.6);
+      color: var(--primary-deep);
+      box-shadow: 0 14px 30px rgba(40, 59, 57, 0.16);
+    }
+
+    .social-link svg {
+      width: 24px;
+      height: 24px;
+      display: block;
+      fill: currentColor;
+    }
+
     .social-link:hover {
+      color: var(--primary-deep);
+      background: rgba(13, 139, 124, 0.14);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .footer-links a:hover {
       color: var(--text);
     }
 
@@ -759,19 +502,8 @@
 
     @media (max-width: 1080px) {
       .hero,
-      .trust-layout,
       .footer-grid {
         grid-template-columns: 1fr;
-      }
-
-      .grid-4,
-      .steps-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .services-grid,
-      .grid-3 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
@@ -782,27 +514,21 @@
       }
 
       .site-nav {
-        padding: 18px;
+        display: flex;
+        justify-content: center;
+        padding: 14px 16px;
         border-radius: 28px;
       }
 
       .brand-mark {
-        height: 72px;
+        width: auto;
+        height: 94px;
         max-width: 240px;
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      .nav-cta {
-        display: none;
+        max-height: none;
       }
 
       .hero-copy,
-      .hero-panel,
       .section-panel,
-      .cta-band,
       .footer-shell {
         border-radius: 28px;
         padding: 24px;
@@ -810,11 +536,10 @@
 
       h1 {
         font-size: clamp(2.15rem, 10vw, 3.15rem);
+        white-space: normal;
       }
 
-      .section-copy h2,
-      .cta-band h2,
-      .trust-panel h2 {
+      .section-copy h2 {
         font-size: clamp(1.8rem, 8vw, 2.5rem);
       }
 
@@ -830,11 +555,14 @@
         width: 100%;
       }
 
-      .grid-4,
-      .grid-3,
-      .services-grid,
-      .steps-grid,
-      .faq-grid {
+      .hero-copy .btn-primary {
+        min-width: 0;
+        min-height: 62px;
+        font-size: 1.05rem;
+        padding: 0 24px;
+      }
+
+      .services-grid {
         grid-template-columns: 1fr;
       }
 
@@ -850,24 +578,13 @@
       <a class="brand" href="#top" aria-label="Destine Broker">
         <img class="brand-mark" src="destine-logo.webp" alt="Destine Broker" />
       </a>
-
-      <nav class="nav-links" aria-label="Navigatie principala">
-        <a href="#servicii">Servicii</a>
-        <a href="#cum-functioneaza">Cum functioneaza</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <a class="nav-cta" href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta%20de%20asigurare.">
-        Solicita oferta
-      </a>
     </header>
 
     <main id="top">
       <section class="hero" aria-label="Introducere">
         <div class="hero-copy">
           <span class="eyebrow">Asigurari online in Romania</span>
-          <h1>Asigurari simple si rapide.</h1>
+          <h1>Asigurari online</h1>
           <p>
             RCA, CASCO, locuinta si calatorie, cu raspuns rapid si sprijin personal,
             oriunde in Romania.
@@ -879,57 +596,11 @@
               href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta%20de%20asigurare."
               aria-label="Solicita oferta pe WhatsApp"
             >
-              <span>Solicita oferta pe WhatsApp</span>
-            </a>
-            <a
-              class="btn btn-secondary"
-              href="https://m.me/216347464903074"
-              aria-label="Scrie pe Messenger"
-            >
-              <span>Scrie pe Messenger</span>
+              <span>Solicita oferta</span>
             </a>
           </div>
 
-          <div class="trust-pills" aria-label="Avantaje principale">
-            <span class="trust-pill">Broker Destine</span>
-            <span class="trust-pill">Polite online</span>
-            <span class="trust-pill">Raspuns rapid</span>
-            <span class="trust-pill">Suport personal</span>
-          </div>
         </div>
-
-        <aside class="hero-panel" aria-label="Beneficii rapide">
-          <div class="hero-card">
-            <h2>Ai nevoie de o asigurare? Te ajut rapid.</h2>
-            <p>
-              Scrii direct, primesti raspuns rapid si rezolvam totul simplu.
-            </p>
-
-            <ul class="hero-list">
-              <li>
-                <span class="icon-badge">01</span>
-                <span>Scrii direct pe WhatsApp sau Messenger.</span>
-              </li>
-              <li>
-                <span class="icon-badge">02</span>
-                <span>Primesti explicatii clare si varianta potrivita.</span>
-              </li>
-              <li>
-                <span class="icon-badge">03</span>
-                <span>Primesti polita online, oriunde in Romania.</span>
-              </li>
-            </ul>
-
-            <a class="hero-mini-cta" href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta%20de%20asigurare.">
-              Scrie acum pe WhatsApp
-            </a>
-          </div>
-
-          <div class="hero-note">
-            <strong>Servicii principale</strong>
-            RCA, CASCO, locuinta, calatorie si alte polite.
-          </div>
-        </aside>
       </section>
 
       <section class="section" id="servicii">
@@ -938,9 +609,6 @@
             <div class="section-copy">
               <span class="section-tag">Servicii</span>
               <h2>Tipuri de asigurari pe care le poti solicita.</h2>
-              <p>
-                Alege serviciul care te intereseaza si scrie-mi direct pentru oferta.
-              </p>
             </div>
           </div>
 
@@ -950,7 +618,6 @@
                 <div>
                   <h3>RCA online</h3>
                 </div>
-                <div class="service-icon">R</div>
               </div>
               <p>
                 Asigurare obligatorie auto, obtinuta simplu si rapid, cu indrumare clara si proces
@@ -966,7 +633,6 @@
                 <div>
                   <h3>CASCO</h3>
                 </div>
-                <div class="service-icon">C</div>
               </div>
               <p>
                 Protectie suplimentara pentru masina ta, explicata pe inteles si adaptata nevoilor
@@ -982,7 +648,6 @@
                 <div>
                   <h3>Asigurare locuinta</h3>
                 </div>
-                <div class="service-icon">L</div>
               </div>
               <p>
                 Protectie pentru casa sau apartament, cu explicatii clare si pasii necesari simplificati.
@@ -997,7 +662,6 @@
                 <div>
                   <h3>Asigurare de calatorie</h3>
                 </div>
-                <div class="service-icon">T</div>
               </div>
               <p>
                 Solutie utila pentru vacante si deplasari, cu emitere online si ajutor clar la alegere.
@@ -1007,140 +671,7 @@
               </a>
             </article>
 
-            <article class="service-card">
-              <div class="service-top">
-                <div>
-                  <h3>Asigurare de viata</h3>
-                </div>
-                <div class="service-icon">V</div>
-              </div>
-              <p>
-                Optiuni pentru protectia familiei si mai multa stabilitate, explicate simplu si clar.
-              </p>
-              <a class="service-link" href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta%20pentru%20asigurare%20de%20viata.">
-                Solicita oferta
-              </a>
-            </article>
-
-            <article class="service-card">
-              <div class="service-top">
-                <div>
-                  <h3>Alte asigurari</h3>
-                </div>
-                <div class="service-icon">+</div>
-              </div>
-              <p>
-                Daca ai nevoie de alt tip de polita, scrie-mi si vedem impreuna ce varianta ti se potriveste.
-              </p>
-              <a class="service-link" href="https://wa.me/40755741613?text=Buna%20ziua!%20Am%20nevoie%20de%20o%20oferta%20pentru%20alt%20tip%20de%20asigurare.">
-                Cere ajutor
-              </a>
-            </article>
           </div>
-        </div>
-      </section>
-
-      <section class="section" id="cum-functioneaza">
-        <div class="section-panel">
-          <div class="section-head">
-            <div class="section-copy">
-              <span class="section-tag">Proces</span>
-              <h2>Cum obtii oferta, fara batai de cap.</h2>
-              <p>
-                Totul este simplu si rapid.
-              </p>
-            </div>
-          </div>
-
-          <div class="steps-grid">
-            <article class="step">
-              <div class="step-index">1</div>
-              <h3>Imi scrii</h3>
-              <p>Ma contactezi pe WhatsApp sau Messenger si imi spui ce tip de asigurare te intereseaza.</p>
-            </article>
-
-            <article class="step">
-              <div class="step-index">2</div>
-              <h3>Iti explic ce ai nevoie</h3>
-              <p>Iti spun simplu ce informatii trebuie si raspund la intrebari fara termeni complicati.</p>
-            </article>
-
-            <article class="step">
-              <div class="step-index">3</div>
-              <h3>Alegem varianta potrivita</h3>
-              <p>Analizam optiunile si mergem pe o solutie potrivita pentru nevoile tale.</p>
-            </article>
-
-            <article class="step">
-              <div class="step-index">4</div>
-              <h3>Primesti polita online</h3>
-              <p>Dupa confirmare, documentele pot fi trimise rapid, direct online.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="faq">
-        <div class="section-panel">
-          <div class="section-head">
-            <div class="section-copy">
-              <span class="section-tag">FAQ</span>
-              <h2>Intrebari frecvente.</h2>
-              <p>Raspunsuri scurte la cele mai comune intrebari.</p>
-            </div>
-          </div>
-
-          <div class="faq-grid">
-            <article class="faq-card">
-              <h3>Ce acte sunt necesare pentru RCA?</h3>
-              <p>Datele necesare depind de masina si de proprietar. Trimite un mesaj si primesti imediat lista exacta.</p>
-            </article>
-
-            <article class="faq-card">
-              <h3>Pot face totul online?</h3>
-              <p>Da. Discutia, oferta si trimiterea documentelor se pot face online, oriunde in Romania.</p>
-            </article>
-
-            <article class="faq-card">
-              <h3>Cat dureaza emiterea politei?</h3>
-              <p>De multe ori raspunsul vine rapid, iar durata depinde de tipul asigurarii si de datele primite.</p>
-            </article>
-
-            <article class="faq-card">
-              <h3>Care este diferenta dintre RCA si CASCO?</h3>
-              <p>RCA este asigurarea obligatorie auto, iar CASCO ofera protectie suplimentara pentru alte riscuri legate de masina.</p>
-            </article>
-
-            <article class="faq-card">
-              <h3>Daca nu stiu exact ce asigurare imi trebuie?</h3>
-              <p>Imi scrii direct si te ajut sa intelegi ce varianta poate fi mai potrivita pentru tine.</p>
-            </article>
-
-            <article class="faq-card">
-              <h3>Pot solicita oferta daca sunt din alt oras?</h3>
-              <p>Da. Lucrez online si te pot ajuta oriunde in Romania, fara sa fie nevoie sa te deplasezi.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta-band" aria-label="Apel la actiune final">
-        <h2>Vrei o oferta rapida si fara complicatii?</h2>
-        <p>
-          Scrie-mi direct pe WhatsApp sau Messenger si te ajut sa alegi o varianta potrivita,
-          simplu, clar si rapid.
-        </p>
-
-        <div class="cta-group">
-          <a
-            class="btn btn-primary"
-            href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta%20de%20asigurare."
-          >
-            Trimite mesaj pe WhatsApp
-          </a>
-          <a class="btn btn-secondary" href="https://m.me/216347464903074">
-            Scrie pe Messenger
-          </a>
         </div>
       </section>
     </main>
@@ -1163,10 +694,25 @@
           <a href="https://m.me/216347464903074">Messenger</a>
         </div>
 
-        <div class="social-links">
-          <a class="social-link" href="https://www.facebook.com/profile.php?id=61556716316093" target="_blank" rel="noopener">Facebook</a>
-          <a class="social-link" href="https://www.instagram.com/destine_asigurari_0755741613/" target="_blank" rel="noopener">Instagram</a>
-          <a class="social-link" href="https://www.tiktok.com/@destineasigurari" target="_blank" rel="noopener">TikTok</a>
+        <div class="social-links" aria-label="Social media">
+          <a class="social-link" href="https://www.facebook.com/profile.php?id=61556716316093" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13.5 22v-8h2.8l.4-3h-3.2V9.1c0-.9.3-1.6 1.7-1.6h1.7V4.8c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1V11H8v3h2.5v8h3z"/>
+            </svg>
+            <span class="sr-only">Facebook</span>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/destine_asigurari_0755741613/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm6.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0zM12 2.8c3 0 3.4 0 4.6.1 1.1.1 1.7.2 2.1.4.6.2 1 .5 1.4 1 .4.4.7.8 1 1.4.2.4.3 1 .4 2.1.1 1.2.1 1.6.1 4.6s0 3.4-.1 4.6c-.1 1.1-.2 1.7-.4 2.1-.2.6-.5 1-1 1.4-.4.4-.8.7-1.4 1-.4.2-1 .3-2.1.4-1.2.1-1.6.1-4.6.1s-3.4 0-4.6-.1c-1.1-.1-1.7-.2-2.1-.4-.6-.2-1-.5-1.4-1-.4-.4-.7-.8-1-1.4-.2-.4-.3-1-.4-2.1-.1-1.2-.1-1.6-.1-4.6s0-3.4.1-4.6c.1-1.1.2-1.7.4-2.1.2-.6.5-1 1-1.4.4-.4.8-.7 1.4-1 .4-.2 1-.3 2.1-.4 1.2-.1 1.6-.1 4.6-.1zm0-1.8c-3 0-3.4 0-4.7.1-1.3.1-2.2.3-3 .6a6 6 0 0 0-2.2 1.4A6 6 0 0 0 .7 5.3c-.3.8-.5 1.7-.6 3C0 9.6 0 10 0 13s0 3.4.1 4.7c.1 1.3.3 2.2.6 3a6 6 0 0 0 1.4 2.2 6 6 0 0 0 2.2 1.4c.8.3 1.7.5 3 .6 1.3.1 1.7.1 4.7.1s3.4 0 4.7-.1c1.3-.1 2.2-.3 3-.6a6 6 0 0 0 2.2-1.4 6 6 0 0 0 1.4-2.2c.3-.8.5-1.7.6-3 .1-1.3.1-1.7.1-4.7s0-3.4-.1-4.7c-.1-1.3-.3-2.2-.6-3a6 6 0 0 0-1.4-2.2 6 6 0 0 0-2.2-1.4c-.8-.3-1.7-.5-3-.6C15.4 1 15 1 12 1z"/>
+            </svg>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a class="social-link" href="https://www.tiktok.com/@destineasigurari" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.7 2h2.7c.2 1.5 1 2.8 2.3 3.5.8.5 1.7.7 2.6.7V9c-1.3 0-2.5-.3-3.6-.9-.5-.3-.9-.6-1.3-1v7.2c0 2.3-1.3 4.4-3.4 5.4-2.1 1-4.6.8-6.5-.4C5.7 18.2 5 16.8 5 15.3c0-3.1 2.5-5.6 5.6-5.6.4 0 .8 0 1.2.1v2.8c-.4-.2-.8-.2-1.2-.2-1.6 0-2.9 1.3-2.9 2.9 0 1.1.6 2.1 1.6 2.6.9.5 2.1.5 3 0 .9-.5 1.5-1.5 1.5-2.6V2z"/>
+            </svg>
+            <span class="sr-only">TikTok</span>
+          </a>
         </div>
       </div>
 
