@@ -1,0 +1,92 @@
+Project Status
+Project: DestineBroker
+Updated: 2026-04-22
+
+Main Goal
+- Build a light, modern, minimal insurance site for Romania under Destine branding.
+- Focus on conversions through WhatsApp / Messenger.
+- Grow SEO visibility in Google with dedicated landing pages and parasite SEO articles.
+
+Current Public Domain
+- https://destine.insur.workers.dev/
+
+Main Public URLs
+- Homepage: https://destine.insur.workers.dev/
+- RCA page: https://destine.insur.workers.dev/rca.html
+- CASCO page: https://destine.insur.workers.dev/casco.html
+- Sitemap: https://destine.insur.workers.dev/sitemap.xml
+- Telegra.ph RCA article:
+  https://telegra.ph/Cum-s%C4%83-evi%C8%9Bi-scumpirea-RCA-%C3%AEn-2026-ghid-practic-despre-bonus-malus-%C8%99i-pre%C8%9Buri-04-21
+
+Important Project Files
+- /Users/alex/Documents/GitHub/DestineBroker/index.html
+- /Users/alex/Documents/GitHub/DestineBroker/rca.html
+- /Users/alex/Documents/GitHub/DestineBroker/casco.html
+- /Users/alex/Documents/GitHub/DestineBroker/robots.txt
+- /Users/alex/Documents/GitHub/DestineBroker/sitemap.xml
+- /Users/alex/Documents/GitHub/DestineBroker/destine-logo.webp
+- /Users/alex/Documents/GitHub/DestineBroker/googleefe47b1a77a3338e.html
+- /Users/alex/Documents/GitHub/DestineBroker/parasite-seo-article-rca-2026.md
+- /Users/alex/Documents/GitHub/DestineBroker/parasite-seo-article-casco-2026.md
+- /Users/alex/Documents/GitHub/DestineBroker/conversation-log.txt
+- /Users/alex/Documents/GitHub/DestineBroker/project-status.txt
+
+What Has Been Done
+- Site moved from GitHub Pages SEO references to Cloudflare Pages domain.
+- Homepage redesigned into a light, glass-style landing page.
+- Top contact bar added with:
+  Romania / email / phone / WhatsApp
+- Header and main logo area compacted and visually cleaned.
+- Dedicated SEO landing pages created:
+  RCA and CASCO
+- Homepage service cards now link to RCA and CASCO pages.
+- Sitemap updated to include homepage, RCA page, CASCO page.
+- Google Search Console verification meta tag added to homepage.
+- Google verification HTML file placed in project root.
+- Parasite SEO article for RCA created and published on Telegra.ph.
+- Parasite SEO article for CASCO created and saved in project.
+
+Design Direction
+- Light theme
+- Minimal but modern
+- Large Destine branding
+- Glass / soft blur look
+- Conversion-first layout
+- Contact options always visible
+
+SEO Direction
+- Homepage targets broad insurance queries
+- RCA page targets RCA / pret RCA / RCA online type intent
+- CASCO page targets CASCO / protection for car type intent
+- More landing pages still needed later:
+  Locuinta and Calatorie
+
+Search Console Status
+- Verification meta tag added in index.html
+- Verification file present:
+  googleefe47b1a77a3338e.html
+- After deploy, verify site in Google Search Console
+- Then submit sitemap:
+  https://destine.insur.workers.dev/sitemap.xml
+
+Parasite SEO Status
+- RCA article published on Telegra.ph
+- CASCO article ready for publication
+- Medium publication still not done
+
+Open Next Steps
+1. Confirm Google Search Console verification works.
+2. Submit sitemap.xml in Search Console.
+3. Publish CASCO article on Telegra.ph or Medium.
+4. Add Locuinta landing page.
+5. Add Calatorie landing page.
+6. Request indexing for homepage, RCA page, CASCO page.
+7. Monitor impressions and clicks in Search Console.
+
+Important Note For Another Computer / Another Session
+- If a future Codex session does not know this history automatically, open:
+  1. conversation-log.txt for full history
+  2. project-status.txt for quick current state
+- Tell Codex:
+  "Read conversation-log.txt and project-status.txt first, then continue from the current site state."
+

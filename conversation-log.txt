@@ -330,3 +330,162 @@ Latest Known Direction (current):
 - Все основные «облака» выровнены по единой ширине.
 - Усилен glass-стиль.
 - Дальше фокус на SEO-структуре и страницах услуг для роста видимости и заявок.
+
+---
+
+New Session Updates (2026-04-21 to 2026-04-22)
+
+User:
+Сообщил, что сайт успешно задеплоен на Cloudflare Pages:
+https://destine.insur.workers.dev/
+
+Assistant:
+Объяснил, что репозиторий может остаться на GitHub, а публичным SEO-доменом теперь должен быть Cloudflare.
+Внес SEO-правки под новый домен:
+- canonical
+- og:url
+- schema url
+- schema logo
+- og:image
+- robots.txt
+- sitemap.xml
+Старые публичные ссылки на github.io были удалены из боевых SEO-файлов.
+
+User:
+Подтвердил, что цель — рост видимости и трафика из Google.
+
+Assistant:
+Предложил строить SEO-структуру через отдельные посадочные страницы под запросы:
+- RCA
+- CASCO
+- Asigurare locuinta
+- Asigurare de calatorie
+
+User:
+Дал пример основного сайта Destine и попросил начать с RCA и CASCO.
+
+Assistant:
+Создал отдельные страницы:
+- /Users/alex/Documents/GitHub/DestineBroker/rca.html
+- /Users/alex/Documents/GitHub/DestineBroker/casco.html
+
+Сделано:
+- У каждой страницы свой title / description / canonical / og:url
+- Добавлены отдельные FAQ блоки
+- Добавлена собственная структура hero + CTA + explanatory sections
+- Страницы связаны с главной
+- sitemap.xml обновлен и включает новые URL
+
+User:
+Попросил сделать шапку в стиле сайта партнера, с контактами сверху.
+
+Assistant:
+Добавил верхнюю контактную строку на:
+- index.html
+- rca.html
+- casco.html
+
+Содержимое строки:
+- Romania
+- email: destine0755741613@gmail.com
+- telefon: +40 755 741 613
+- WhatsApp
+
+User:
+Попросил распределить верхние контакты симметрично с равными интервалами и уменьшить по высоте главное «облако» с логотипом.
+
+Assistant:
+Переделал шапку:
+- Верхняя строка переведена в ровную 4-колоночную сетку
+- Элементы распределены более симметрично
+- Блок с главным логотипом стал ниже и компактнее
+- Те же изменения применены на index / rca / casco
+
+User:
+Дал ТЗ на Parasite SEO:
+- Google Trends Romania
+- выбрать горячую тему
+- сделать статью под Telegra.ph / Medium
+- вставить ссылки на destine.insur.workers.dev
+
+Assistant:
+На основе трендовых сигналов и материалов по рынку RCA выбрал горячую тему:
+- RCA 2026
+- scumpire RCA
+- bonus-malus
+
+Создал статью:
+- /Users/alex/Documents/GitHub/DestineBroker/parasite-seo-article-rca-2026.md
+
+Структура:
+- H1 с кликбейтным углом
+- вступление
+- 4 совета
+- список
+- FAQ
+- CTA
+- ссылки на /rca.html и /casco.html
+
+User:
+Попросил аналогичную статью для CASCO.
+
+Assistant:
+Создал:
+- /Users/alex/Documents/GitHub/DestineBroker/parasite-seo-article-casco-2026.md
+
+User:
+Опубликовал статью на Telegra.ph и прислал ссылку:
+https://telegra.ph/Cum-s%C4%83-evi%C8%9Bi-scumpirea-RCA-%C3%AEn-2026-ghid-practic-despre-bonus-malus-%C8%99i-pre%C8%9Buri-04-21
+
+Assistant:
+Сначала заметил, что статья вставлена как сырой Markdown.
+После повторной проверки по скриншоту подтвердил, что оформление уже исправлено и статья выглядит как нормальный материал для Telegra.ph.
+
+User:
+Перешел к Google Search Console и дал метатег подтверждения + добавил HTML-файл:
+googleefe47b1a77a3338e.html
+
+Assistant:
+Добавил метатег подтверждения Google в head главной страницы:
+<meta name="google-site-verification" content="65Btk3tHEKb8HeIFJFU9WfJFnvuRpn1TA7MLzB4rfK4" />
+
+Проверил, что HTML-файл лежит в корне проекта:
+- /Users/alex/Documents/GitHub/DestineBroker/googleefe47b1a77a3338e.html
+
+Assistant:
+Рекомендовал после деплоя:
+- открыть HTML-файл подтверждения по публичному адресу
+- нажать Verify в Google Search Console
+- затем отправить sitemap.xml
+
+Current Project Files Added / Updated In This Session:
+- /Users/alex/Documents/GitHub/DestineBroker/index.html
+- /Users/alex/Documents/GitHub/DestineBroker/rca.html
+- /Users/alex/Documents/GitHub/DestineBroker/casco.html
+- /Users/alex/Documents/GitHub/DestineBroker/sitemap.xml
+- /Users/alex/Documents/GitHub/DestineBroker/robots.txt
+- /Users/alex/Documents/GitHub/DestineBroker/googleefe47b1a77a3338e.html
+- /Users/alex/Documents/GitHub/DestineBroker/parasite-seo-article-rca-2026.md
+- /Users/alex/Documents/GitHub/DestineBroker/parasite-seo-article-casco-2026.md
+
+Current Public URLs:
+- Main site: https://destine.insur.workers.dev/
+- RCA page: https://destine.insur.workers.dev/rca.html
+- CASCO page: https://destine.insur.workers.dev/casco.html
+- Sitemap: https://destine.insur.workers.dev/sitemap.xml
+- Telegra.ph article (RCA): https://telegra.ph/Cum-s%C4%83-evi%C8%9Bi-scumpirea-RCA-%C3%AEn-2026-ghid-practic-despre-bonus-malus-%C8%99i-pre%C8%9Buri-04-21
+
+Latest Known Direction (updated):
+- Публичный домен теперь Cloudflare Pages: destine.insur.workers.dev
+- Главная страница и SEO-структура переведены на новый домен
+- Есть отдельные посадочные страницы под RCA и CASCO
+- Верхняя контактная строка добавлена и выровнена
+- Основной логотип и шапка упорядочены под стиль партнера
+- Есть готовые parasite SEO статьи для RCA и CASCO
+- Первая статья на Telegra.ph уже опубликована
+- Начата настройка Google Search Console через метатег и verification HTML file
+- Следующие логичные шаги:
+  1. Подтвердить сайт в Search Console
+  2. Отправить sitemap.xml
+  3. Опубликовать CASCO статью
+  4. Сделать страницы Locuinta и Calatorie
