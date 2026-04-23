@@ -1965,6 +1965,10 @@
         }
 
         async handleOpen() {
+          if (!this.ui.panel.hidden) {
+            this.ui.close();
+            return;
+          }
           this.ui.open();
           if (!this.hasStarted) {
             await this.startConversation(false);
