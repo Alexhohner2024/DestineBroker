@@ -736,3 +736,132 @@ Latest Known Direction (current latest):
   1. deploy
   2. verificare live a aspectului textelor juridice
   3. daca sunt prea dense vizual, rafinare premium a sectiunii legale
+
+--------------------------------------------------
+Conversation Continuation
+Project: DestineBroker
+Updated: 2026-04-24
+
+User:
+A cerut continuarea lucrului direct din starea actuala a proiectului si ajustari iterative pe homepage,
+logo, hero, footer si apoi un chat widget de lead capture.
+
+Assistant:
+A reanalizat proiectul local si a reconfirmat structura:
+- site static bazat pe fisiere HTML in root
+- homepage:
+  /Users/alex/Documents/GitHub/DestineBroker/index.html
+- landing pages:
+  /Users/alex/Documents/GitHub/DestineBroker/rca.html
+  /Users/alex/Documents/GitHub/DestineBroker/casco.html
+  /Users/alex/Documents/GitHub/DestineBroker/locuinta.html
+  /Users/alex/Documents/GitHub/DestineBroker/calatorie.html
+- memorie locala de proiect:
+  /Users/alex/Documents/GitHub/DestineBroker/conversation-log.txt
+  /Users/alex/Documents/GitHub/DestineBroker/project-status.txt
+
+Homepage / Branding updates made in this continuation:
+- Logo Destine enlarged significantly on homepage and inner pages.
+- Header logo container was repeatedly refined based on visual feedback:
+  - logo cloud reduced
+  - capsule shape replaced with soft rectangle
+  - logo card height reduced
+  - logo width adjusted
+  - separate cloud around logo removed entirely
+- Root cause discovered:
+  original logo asset was square (696x696), creating too much empty space.
+- A new cropped visual asset was generated:
+  /Users/alex/Documents/GitHub/DestineBroker/destine-logo-wide.png
+  dimensions: 696x420
+- Visible header logo on homepage and service pages now uses this wide cropped version.
+
+Homepage text/content refinements based on browser comments:
+- Removed duplicated eyebrow text:
+  "Asigurari online in Romania"
+- Removed hero meta line:
+  "Cod Intern: 9002210185 | Certificat ISF Seria: PIC NR: 153570"
+- Added broker name directly into hero trust sentence:
+  "OLEKSANDR BABAIAN, distribuitor in asigurari pregatit profesional de ISF..."
+- Removed small section tags:
+  "Servicii"
+  "Validare"
+- Footer contact area redesigned with icon-based contact cards instead of plain labels for:
+  phone / email / WhatsApp / Messenger
+- Social icons in footer enlarged and spacing tightened.
+- Footer legal note expanded with partner site:
+  https://destine-broker.ro/
+
+Lead Chat Widget implemented on homepage:
+- A floating bottom-right chat button was added.
+- On click it opens a modern WhatsApp-like step-by-step chat panel.
+- All visible copy is in Romanian.
+- Chat UI includes:
+  - close button
+  - restart button
+  - smooth scroll
+  - typing indicator
+  - loading state
+  - success / error states
+- Chat logic was structured separately in inline JS:
+  - config object with all texts
+  - LeadFlow
+  - ChatWidgetUI
+  - ChatLeadWidget
+- Current implementation is lightweight and frontend-only.
+- Webhook submission added directly to Make.com:
+  https://hook.eu2.make.com/wwtt053o25jagc8jqhb0koywruha2hvh
+- Payload includes:
+  source / insuranceType / fullName / phone / email / carNumber / vin /
+  additionalInfo / createdAt / pageUrl / ownerEmail
+- Owner email stored in config:
+  alex.babaian2008@gmail.com
+
+Implemented chat flow:
+1. Greeting
+2. Insurance type buttons:
+   RCA / CASCO / Locuinta / Calatorie / Carte Verde / Rovinieta / Altele
+3. Full name
+4. Phone
+5. Email
+6. For RCA / CASCO / Carte Verde:
+   car registration number
+7. VIN
+8. Additional info (optional)
+
+Validation implemented:
+- required fields:
+  insuranceType / fullName / phone / email
+- email format validation
+- phone validation with at least 8 digits
+- polite retry / error prompts in Romanian
+
+Submission result behavior:
+- success message shown in chat
+- CTA button:
+  "Continua pe WhatsApp"
+- WhatsApp continuation link added after successful submit
+- error message shown on webhook failure
+
+Chat UX refinements after feedback:
+- Main hero CTA button "Solicita oferta" now opens the chat widget instead of external WhatsApp.
+- Enter key now submits message in chat.
+- Shift + Enter keeps multiline input behavior.
+- Repeated press on the floating chat button now toggles the panel closed.
+- Chat open/close animation upgraded to a more elastic bubble-like motion with damping.
+
+Files changed during this continuation:
+- /Users/alex/Documents/GitHub/DestineBroker/index.html
+- /Users/alex/Documents/GitHub/DestineBroker/rca.html
+- /Users/alex/Documents/GitHub/DestineBroker/casco.html
+- /Users/alex/Documents/GitHub/DestineBroker/locuinta.html
+- /Users/alex/Documents/GitHub/DestineBroker/calatorie.html
+- /Users/alex/Documents/GitHub/DestineBroker/conversation-log.txt
+- new asset:
+  /Users/alex/Documents/GitHub/DestineBroker/destine-logo-wide.png
+
+Important working convention established in this session:
+- When user says:
+  "сохранись"
+  Codex should update the local project memory file:
+  /Users/alex/Documents/GitHub/DestineBroker/conversation-log.txt
+  with a concise summary of the current session and latest implemented changes.
