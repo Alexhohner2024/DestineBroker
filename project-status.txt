@@ -1,6 +1,6 @@
 Project Status
 Project: DestineBroker
-Updated: 2026-04-22
+Updated: 2026-04-23
 
 Main Goal
 - Build a light, modern, minimal insurance site for Romania under Destine branding.
@@ -14,6 +14,8 @@ Main Public URLs
 - Homepage: https://destine.insur.workers.dev/
 - RCA page: https://destine.insur.workers.dev/rca.html
 - CASCO page: https://destine.insur.workers.dev/casco.html
+- Locuinta page: https://destine.insur.workers.dev/locuinta.html
+- Calatorie page: https://destine.insur.workers.dev/calatorie.html
 - Sitemap: https://destine.insur.workers.dev/sitemap.xml
 - Telegra.ph RCA article:
   https://telegra.ph/Cum-s%C4%83-evi%C8%9Bi-scumpirea-RCA-%C3%AEn-2026-ghid-practic-despre-bonus-malus-%C8%99i-pre%C8%9Buri-04-21
@@ -22,6 +24,8 @@ Important Project Files
 - /Users/alex/Documents/GitHub/DestineBroker/index.html
 - /Users/alex/Documents/GitHub/DestineBroker/rca.html
 - /Users/alex/Documents/GitHub/DestineBroker/casco.html
+- /Users/alex/Documents/GitHub/DestineBroker/locuinta.html
+- /Users/alex/Documents/GitHub/DestineBroker/calatorie.html
 - /Users/alex/Documents/GitHub/DestineBroker/robots.txt
 - /Users/alex/Documents/GitHub/DestineBroker/sitemap.xml
 - /Users/alex/Documents/GitHub/DestineBroker/destine-logo.webp
@@ -39,8 +43,12 @@ What Has Been Done
 - Header and main logo area compacted and visually cleaned.
 - Dedicated SEO landing pages created:
   RCA and CASCO
+- Additional SEO landing pages created:
+  Locuinta and Calatorie
 - Homepage service cards now link to RCA and CASCO pages.
+- Homepage service cards now also link to Locuinta and Calatorie pages.
 - Sitemap updated to include homepage, RCA page, CASCO page.
+- Sitemap updated to include Locuinta and Calatorie pages.
 - Google Search Console verification meta tag added to homepage.
 - Google verification HTML file placed in project root.
 - Parasite SEO article for RCA created and published on Telegra.ph.
@@ -58,8 +66,8 @@ SEO Direction
 - Homepage targets broad insurance queries
 - RCA page targets RCA / pret RCA / RCA online type intent
 - CASCO page targets CASCO / protection for car type intent
-- More landing pages still needed later:
-  Locuinta and Calatorie
+- Locuinta page targets asigurare locuinta / casa / apartament type intent
+- Calatorie page targets asigurare de calatorie / vacanta / deplasare type intent
 
 Search Console Status
 - Verification meta tag added in index.html
@@ -78,10 +86,8 @@ Open Next Steps
 1. Confirm Google Search Console verification works.
 2. Submit sitemap.xml in Search Console.
 3. Publish CASCO article on Telegra.ph or Medium.
-4. Add Locuinta landing page.
-5. Add Calatorie landing page.
-6. Request indexing for homepage, RCA page, CASCO page.
-7. Monitor impressions and clicks in Search Console.
+4. Request indexing for homepage, RCA page, CASCO page, Locuinta page and Calatorie page.
+5. Monitor impressions and clicks in Search Console.
 
 Important Note For Another Computer / Another Session
 - If a future Codex session does not know this history automatically, open:
