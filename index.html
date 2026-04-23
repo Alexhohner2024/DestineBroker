@@ -835,11 +835,20 @@
       display: flex;
       flex-direction: column;
       transform-origin: bottom right;
-      animation: chat-pop 0.24s ease both;
+      will-change: transform, opacity, filter;
     }
 
     .chat-widget-panel[hidden] {
       display: none;
+    }
+
+    .chat-widget-panel.is-open {
+      animation: chat-bubble-open 0.58s cubic-bezier(0.22, 1.32, 0.32, 1) both;
+    }
+
+    .chat-widget-panel.is-closing {
+      pointer-events: none;
+      animation: chat-bubble-close 0.34s cubic-bezier(0.4, 0, 0.2, 1) both;
     }
 
     .chat-widget-header {
@@ -1085,14 +1094,44 @@
       margin-top: 10px;
     }
 
-    @keyframes chat-pop {
-      from {
+    @keyframes chat-bubble-open {
+      0% {
         opacity: 0;
-        transform: translateY(18px) scale(0.96);
+        transform: translateY(34px) scale(0.72, 0.58) rotate(-2.2deg);
+        filter: blur(10px);
       }
-      to {
+      38% {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        transform: translateY(-8px) scale(1.05, 1.08) rotate(0.8deg);
+        filter: blur(0);
+      }
+      62% {
+        transform: translateY(4px) scale(0.97, 0.94) rotate(-0.45deg);
+      }
+      82% {
+        transform: translateY(-2px) scale(1.015, 1.02) rotate(0.15deg);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(0deg);
+        filter: blur(0);
+      }
+    }
+
+    @keyframes chat-bubble-close {
+      0% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(0deg);
+        filter: blur(0);
+      }
+      35% {
+        opacity: 1;
+        transform: translateY(-3px) scale(1.02, 0.98) rotate(0.2deg);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(24px) scale(0.78, 0.62) rotate(-1.8deg);
+        filter: blur(8px);
       }
     }
 
@@ -1836,13 +1875,25 @@
         }
 
         open() {
+          this.panel.classList.remove("is-closing");
           this.panel.hidden = false;
+          this.panel.classList.remove("is-open");
+          void this.panel.offsetWidth;
+          this.panel.classList.add("is-open");
           this.launcher.hidden = true;
         }
 
         close() {
-          this.panel.hidden = true;
+          if (this.panel.hidden || this.panel.classList.contains("is-closing")) {
+            return;
+          }
+          this.panel.classList.remove("is-open");
+          this.panel.classList.add("is-closing");
           this.launcher.hidden = false;
+          window.setTimeout(() => {
+            this.panel.hidden = true;
+            this.panel.classList.remove("is-closing");
+          }, 340);
         }
 
         clearMessages() {
