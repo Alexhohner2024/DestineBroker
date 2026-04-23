@@ -1820,6 +1820,12 @@
             event.preventDefault();
             events.onSubmit(this.input.value);
           });
+          this.input.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" && !event.shiftKey) {
+              event.preventDefault();
+              events.onSubmit(this.input.value);
+            }
+          });
           this.messages.addEventListener("click", (event) => {
             const optionButton = event.target.closest("[data-chat-option]");
             if (!optionButton) {
