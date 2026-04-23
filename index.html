@@ -64,6 +64,47 @@
   }
   </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Cum pot cumpara o rovinieta online?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Poti cumpara rapid o rovinieta online prin parteneri oficiali precum roviniete.ro, alegand perioada potrivita pentru masina ta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Unde gasesc cel mai ieftin RCA online?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Daca vrei RCA ieftin, te pot ajuta sa compari rapid optiuni de asigurare auto online si sa identifici o varianta potrivita pentru bugetul tau."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cum fac o verificare rovinieta sau RCA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pentru verificare asigurare RCA poti folosi baza oficiala AIDA, iar pentru rovinieta poti folosi platformele oficiale dedicate verificarii valabilitatii."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cum se plateste taxa de pod Fetesti?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Taxa de pod Fetesti se poate plati online sau prin SMS, in functie de optiunea aleasa, iar plata online este preferata de multi soferi pentru rapiditate."
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -438,6 +479,75 @@
       text-decoration: none;
     }
 
+    .faq-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .faq-item {
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.74);
+      background: rgba(255, 255, 255, 0.52);
+      box-shadow: 0 14px 32px rgba(40, 59, 57, 0.08);
+      overflow: hidden;
+    }
+
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px 24px;
+      font-family: "Sora", sans-serif;
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .faq-question {
+      font: inherit;
+      color: inherit;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      width: 34px;
+      height: 34px;
+      flex: 0 0 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(13, 139, 124, 0.1);
+      color: var(--primary-deep);
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-answer {
+      padding: 0 24px 24px;
+    }
+
+    .faq-answer p + p {
+      margin-top: 12px;
+    }
+
+    .faq-answer a {
+      color: var(--primary-deep);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
     .footer-shell {
       width: var(--bubble-width);
       margin-top: 28px;
@@ -753,6 +863,83 @@
               </a>
             </article>
 
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="informatii-utile">
+        <div class="section-panel">
+          <div class="section-head">
+            <div class="section-copy">
+              <span class="section-tag">Intrebari Frecvente</span>
+              <h2>Informatii utile pentru soferi (Rovinieta si RCA)</h2>
+              <p>
+                Am adunat mai jos cateva raspunsuri utile despre <strong>rovinieta online</strong>,
+                <strong>RCA ieftin</strong>, <strong>verificare asigurare</strong> si
+                plata taxelor rutiere, astfel incat sa gasesti rapid informatia de care ai nevoie.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-list" aria-label="Intrebari frecvente pentru soferi">
+            <details class="faq-item">
+              <summary><span class="faq-question">Cum pot cumpara o rovinieta online?</span></summary>
+              <div class="faq-answer">
+                <p>
+                  Poti cumpara rapid o <strong>rovinieta online</strong> prin parteneri oficiali,
+                  alegand perioada potrivita pentru masina ta si finalizand plata in doar cateva minute.
+                </p>
+                <p>
+                  Un exemplu util este
+                  <a href="https://www.roviniete.ro/ro/rovinieta" target="_blank" rel="noopener">roviniete.ro</a>,
+                  unde poti verifica pasii si cumpara rovinieta auto online.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary><span class="faq-question">Unde gasesc cel mai ieftin RCA online?</span></summary>
+              <div class="faq-answer">
+                <p>
+                  Daca vrei <strong>RCA ieftin</strong>, cel mai important este sa compari rapid ofertele
+                  disponibile pentru <strong>asigurare auto online</strong>, nu doar sa alegi primul pret vazut.
+                </p>
+                <p>
+                  Te pot ajuta sa verifici variantele disponibile si sa gasesti o solutie potrivita pentru
+                  masina ta si bugetul tau, simplu si rapid.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary><span class="faq-question">Cum fac o verificare rovinieta sau RCA?</span></summary>
+              <div class="faq-answer">
+                <p>
+                  Pentru <strong>verificare asigurare RCA</strong>, poti folosi baza oficiala
+                  <a href="https://www.aida.info.ro/polite-rca" target="_blank" rel="noopener">AIDA</a>,
+                  unde verifici rapid daca polita este activa.
+                </p>
+                <p>
+                  Pentru <strong>verificare rovinieta</strong> sau valabilitate rovinieta, foloseste
+                  platformele oficiale dedicate taxelor rutiere si achizitiei de rovinieta online.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary><span class="faq-question">Cum se plateste taxa de pod Fetesti?</span></summary>
+              <div class="faq-answer">
+                <p>
+                  <strong>Taxa de pod Fetesti</strong> se poate plati online sau prin SMS, in functie de
+                  optiunea pe care o alegi. Multi soferi prefera plata taxa pod online pentru ca este rapida
+                  si usor de facut inainte de drum.
+                </p>
+                <p>
+                  Pentru plata online poti verifica
+                  <a href="https://www.roviniete.ro/ro/plata-taxa-pod" target="_blank" rel="noopener">pagina dedicata de taxa pod</a>.
+                </p>
+              </div>
+            </details>
           </div>
         </div>
       </section>
