@@ -224,6 +224,26 @@
       border: 1px solid rgba(28,43,42,0.12);
       box-shadow: 0 16px 30px rgba(31,47,44,0.08);
     }
+    .helper-actions {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+      max-width: 720px;
+    }
+    .btn-helper {
+      min-height: 42px;
+      padding: 0 16px;
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--primary-deep);
+      background: linear-gradient(135deg, rgba(13, 139, 124, 0.12), rgba(8, 105, 93, 0.08));
+      border: 1px solid rgba(13, 139, 124, 0.18);
+      box-shadow: 0 12px 24px rgba(13, 139, 124, 0.12);
+    }
+    .btn-helper:hover {
+      box-shadow: 0 16px 26px rgba(13, 139, 124, 0.16);
+    }
     .trust-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
     .trust-pills span {
       padding: 10px 14px;
@@ -307,7 +327,7 @@
     }
     .crumbs a { text-decoration: none; }
     @media (max-width: 860px) {
-      .hero, .cards, .faq { grid-template-columns: 1fr; }
+      .hero, .cards, .faq, .helper-actions { grid-template-columns: 1fr; }
       .topbar {
         display: flex;
         flex-direction: column;
@@ -360,6 +380,11 @@
           <div class="cta-group">
             <a class="btn btn-primary" href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta%20RCA.">Solicita oferta RCA</a>
             <a class="btn btn-secondary" href="https://m.me/216347464903074">Scrie pe Messenger</a>
+          </div>
+          <div class="helper-actions" aria-label="Linkuri utile pentru soferi">
+            <a class="btn btn-helper" href="https://www.roviniete.ro/ro/rovinieta" target="_blank" rel="noopener">Rovinieta</a>
+            <a class="btn btn-helper" href="https://www.roviniete.ro/ro/plata-taxa-pod" target="_blank" rel="noopener">Taxa de pod</a>
+            <a class="btn btn-helper" href="https://www.aida.info.ro/polite-rca" target="_blank" rel="noopener">Verificare RCA</a>
           </div>
           <div class="trust-pills">
             <span>Raspuns rapid</span>
