@@ -597,3 +597,56 @@ Latest Known Direction (updated):
   1. задеплоить изменения
   2. проверить live-страницы
   3. отправить новые URL в индексацию через Search Console
+
+User:
+Сообщил, что полезные кнопки появились не там, где ожидалось: не под главной кнопкой на домашней странице.
+
+Assistant:
+Исправил это:
+- добавил блок вспомогательных кнопок прямо под главным CTA на /Users/alex/Documents/GitHub/DestineBroker/index.html
+
+Кнопки:
+- Rovinieta
+- Taxa de pod
+- Verificare RCA
+
+User:
+Показал экран GitHub Pages и уточнил, что GitHub Pages всё ещё нужен как удобный адрес.
+
+Assistant:
+Проверил ситуацию и объяснил:
+- сейчас у проекта два публичных адреса:
+  - GitHub Pages: https://alexhohner2024.github.io/DestineBroker/
+  - Cloudflare / Workers: https://destine.insur.workers.dev/
+- для простого статического сайта полезно держать Pages в максимально простом режиме
+- добавил файл /Users/alex/Documents/GitHub/DestineBroker/.nojekyll
+
+User:
+Подтвердил, что кнопки уже появились.
+
+Assistant:
+Подтвердил, что правка главной страницы применена корректно.
+
+User:
+Попросил увеличить кнопку "Solicita oferta", увеличить логотип Destine и убрать "RO Romania" из верхней шапки.
+
+Assistant:
+Обновил:
+- /Users/alex/Documents/GitHub/DestineBroker/index.html
+
+Сделано:
+- главная кнопка CTA стала шире
+- текст на кнопке стал крупнее
+- логотип Destine в шапке увеличен
+- левый блок RO / Romania убран из topbar
+- в верхней строке оставлены email / telefon / WhatsApp
+
+Latest Known Direction (end of day update):
+- Главная страница стала более коммерческой и чище визуально
+- Полезные водительские кнопки теперь стоят именно под главным CTA на домашней странице
+- Логотип Destine усилен визуально в шапке
+- Верхняя контактная строка упрощена
+- Следующий шаг на завтра:
+  1. проверить обе публичные версии сайта
+  2. при необходимости задеплоить/досинхронизировать изменения
+  3. продолжить SEO и индексацию
