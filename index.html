@@ -1281,13 +1281,14 @@
           </p>
 
           <div class="cta-group">
-            <a
+            <button
               class="btn btn-primary"
-              href="https://wa.me/40755741613?text=Buna%20ziua!%20Doresc%20o%20oferta%20de%20asigurare."
-              aria-label="Solicita oferta pe WhatsApp"
+              type="button"
+              data-chat-trigger
+              aria-label="Deschide chatul pentru solicitarea unei oferte"
             >
               <span>Solicita oferta</span>
-            </a>
+            </button>
           </div>
           <div class="helper-actions" aria-label="Linkuri utile pentru soferi">
             <a class="btn btn-helper" href="https://www.roviniete.ro/ro/rovinieta" target="_blank" rel="noopener">Rovinieta</a>
@@ -1794,6 +1795,7 @@
           this.root = root;
           this.config = config;
           this.launcher = root.querySelector("[data-chat-open]");
+          this.triggers = Array.from(document.querySelectorAll("[data-chat-trigger]"));
           this.panel = root.querySelector("[data-chat-panel]");
           this.closeButton = root.querySelector("[data-chat-close]");
           this.restartButton = root.querySelector("[data-chat-restart]");
@@ -1809,6 +1811,9 @@
 
         bind(events) {
           this.launcher.addEventListener("click", () => events.onOpen());
+          this.triggers.forEach((trigger) => {
+            trigger.addEventListener("click", () => events.onOpen());
+          });
           this.closeButton.addEventListener("click", () => events.onClose());
           this.restartButton.addEventListener("click", () => events.onRestart());
           this.form.addEventListener("submit", (event) => {
