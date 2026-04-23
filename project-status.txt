@@ -61,6 +61,14 @@ What Has Been Done
 - Google verification HTML file placed in project root.
 - Parasite SEO article for RCA created and published on Telegra.ph.
 - Parasite SEO article for CASCO created and saved in project.
+- Professional / legal identity upgrade added:
+  - ISF distributor wording in homepage hero
+  - internal code and certificate series in hero
+  - validation badge on homepage
+  - GDPR note integrated in contact/footer area
+  - legal footer updated with OLEKSANDR BABAIAN / Destine Holding / ISF wording
+- Same ISF / legal / GDPR identity also added to:
+  RCA page and CASCO page
 
 Design Direction
 - Light theme
@@ -69,6 +77,7 @@ Design Direction
 - Glass / soft blur look
 - Conversion-first layout
 - Contact options always visible
+- Legal text should remain visually discreet and not overload the UI
 
 SEO Direction
 - Homepage targets broad insurance queries
@@ -88,19 +97,34 @@ Search Console Status
 - Then submit sitemap:
   https://destine.insur.workers.dev/sitemap.xml
 
+Compliance / Professional Identity Status
+- Homepage includes:
+  - "Distribuitor in asigurari pregatit profesional de ISF, in parteneriat cu Destine Holding S.A."
+  - "Cod Intern: 9002210185 | Certificat ISF Seria: PIC NR: 153570"
+  - badge:
+    "Certificat de Absolvire: Pregatire Profesionala Initiala - Categoria Conducator"
+  - validity:
+    "Certificare activa pana la: 16/02/2027"
+- Footer legal note updated with:
+  OLEKSANDR BABAIAN / Cod 9002210185 / Destine Holding S.A. / CUI 22046912 / ISF / 16/02/2024
+- GDPR note added in contact/footer area
+- Note:
+  the site does not use classic forms, so GDPR wording is attached to contact channels (WhatsApp / Messenger / phone / email)
+
 Parasite SEO Status
 - RCA article published on Telegra.ph
 - CASCO article ready for publication
 - Medium publication still not done
 
 Open Next Steps
-1. Check both public URLs after the latest homepage design updates.
-2. Deploy or sync the latest local changes where needed.
+1. Deploy the latest ISF / GDPR / legal updates.
+2. Check live appearance of legal text on homepage, RCA and CASCO.
 3. Confirm Google Search Console verification works.
 4. Submit sitemap.xml in Search Console.
 5. Publish CASCO article on Telegra.ph or Medium.
 6. Request indexing for homepage, RCA page, CASCO page, Locuinta page and Calatorie page.
 7. Monitor impressions and clicks in Search Console.
+8. If legal sections feel visually too dense, refine them into a more premium institutional style.
 
 Important Note For Another Computer / Another Session
 - If a future Codex session does not know this history automatically, open:
@@ -108,4 +132,3 @@ Important Note For Another Computer / Another Session
   2. project-status.txt for quick current state
 - Tell Codex:
   "Read conversation-log.txt and project-status.txt first, then continue from the current site state."
-

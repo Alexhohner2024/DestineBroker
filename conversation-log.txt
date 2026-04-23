@@ -650,3 +650,89 @@ Latest Known Direction (end of day update):
   1. проверить обе публичные версии сайта
   2. при необходимости задеплоить/досинхронизировать изменения
   3. продолжить SEO и индексацию
+
+---
+
+New Session Update (2026-04-23)
+
+User:
+Дал новый подробный промпт на румынском языке для юридического и профессионального позиционирования сайта.
+Главная цель:
+- показать статус официального distribuitor in asigurari
+- сослаться на ISF
+- упомянуть partnership with Destine Holding
+- добавить идентификационные и правовые данные
+- интегрировать GDPR и legal footer, сохранив современный UI/UX
+
+User requested key details:
+- "Distribuitor in asigurari pregatit profesional de ISF, in parteneriat cu Destine Holding S.A."
+- "Cod Intern: 9002210185 | Certificat ISF Seria: PIC NR: 153570"
+- badge cu:
+  "Certificat de Absolvire: Pregatire Profesionala Initiala - Categoria Conducator"
+- valabilitate:
+  "Certificare activa pana la: 16/02/2027"
+- legal footer cu:
+  "© 2026 OLEKSANDR BABAIAN. Site operat de un asistent in brokeraj..."
+- text GDPR pentru prelucrarea datelor
+
+Assistant:
+A analizat structura reala a paginilor si a constatat ca site-ul nu foloseste formulare clasice, ci canale de contact:
+- WhatsApp
+- Messenger
+- telefon
+- email
+
+Din acest motiv, nota GDPR a fost integrata elegant in zona de contact/footer, nu intr-un form inexistent.
+
+Assistant:
+A actualizat urmatoarele fisiere:
+- /Users/alex/Documents/GitHub/DestineBroker/index.html
+- /Users/alex/Documents/GitHub/DestineBroker/rca.html
+- /Users/alex/Documents/GitHub/DestineBroker/casco.html
+
+Ce s-a adaugat:
+
+Homepage:
+- text profesional ISF in hero
+- cod intern + seria certificatului sub hero
+- sectiune noua de validare profesionala
+- badge vizual cu icon de tip scut
+- mentiunea:
+  "Certificat de Absolvire: Pregatire Profesionala Initiala - Categoria Conducator"
+- valabilitate:
+  "Certificare activa pana la: 16/02/2027"
+- card separat cu:
+  Cod Intern: 9002210185
+  Certificat ISF Seria: PIC NR: 153570
+- nota GDPR in footer/contact area
+- footer juridic actualizat cu OLEKSANDR BABAIAN / Destine Holding / ISF
+
+RCA page:
+- text ISF in hero
+- cod intern + seria certificatului in hero
+- nota GDPR in footer
+- legal footer actualizat
+
+CASCO page:
+- text ISF in hero
+- cod intern + seria certificatului in hero
+- nota GDPR in footer
+- legal footer actualizat
+
+Assistant:
+A verificat apoi prin search in fisiere ca toate aceste texte exista in cele 3 pagini.
+
+Important implementation note:
+- legal/GDPR copy a fost adaptat la structura reala a site-ului
+- nu exista formulare clasice, deci nota GDPR se aplica datelor trimise prin:
+  WhatsApp / Messenger / telefon / email
+
+Latest Known Direction (current latest):
+- Site-ul este acum nu doar comercial, ci si mai "instituțional"
+- homepage include validare ISF si badge profesional
+- RCA si CASCO includ aceeasi identitate profesionala in hero
+- footer-ul juridic este aliniat cu noul statut declarat
+- urmatorul pas logic:
+  1. deploy
+  2. verificare live a aspectului textelor juridice
+  3. daca sunt prea dense vizual, rafinare premium a sectiunii legale
