@@ -489,3 +489,111 @@ Latest Known Direction (updated):
   2. Отправить sitemap.xml
   3. Опубликовать CASCO статью
   4. Сделать страницы Locuinta и Calatorie
+
+
+---
+Session Continuation Log
+Date: 2026-04-23
+
+User:
+Попросил сначала восстановить контекст проекта по локальной памяти внутри репозитория.
+
+Assistant:
+Изучил файлы:
+- /Users/alex/Documents/GitHub/DestineBroker/conversation-log.txt
+- /Users/alex/Documents/GitHub/DestineBroker/project-status.txt
+
+Подтвердил текущий контекст:
+- проект продвигается как SEO-структура страхового сайта под румынский рынок
+- уже есть главная страница и посадочные под RCA и CASCO
+- рабочий публичный домен: https://destine.insur.workers.dev/
+
+User:
+Попросил добавить новые SEO-подстраницы для расширения структуры сайта и индексации в Google. В качестве референса дал основной сайт Destine.
+
+Assistant:
+Создал новые посадочные страницы:
+- /Users/alex/Documents/GitHub/DestineBroker/locuinta.html
+- /Users/alex/Documents/GitHub/DestineBroker/calatorie.html
+
+Сделано:
+- у каждой новой страницы свой title / description / canonical / og:url
+- добавлены отдельные FAQ-блоки и FAQ schema
+- сохранён общий стиль сайта
+- карточки услуг на главной теперь ведут на новые страницы
+- sitemap.xml обновлен и включает новые URL
+
+User:
+Спросил, достаточно ли четырех категорий для SEO или нужно больше.
+
+Assistant:
+Объяснил логику:
+- 4 подкатегории уже создают хорошую базовую SEO-структуру
+- важнее не количество страниц, а отдельный интент, уникальный текст, перелинковка и индексация
+- рекомендовал пока не плодить много слабых страниц, а сначала закрепить текущую структуру
+
+User:
+Дал промпт на реализацию вспомогательных кнопок для водителей под основной CTA на RCA-странице:
+- Rovinieta
+- Taxa de pod
+- Verificare RCA
+
+Assistant:
+Обновил:
+- /Users/alex/Documents/GitHub/DestineBroker/rca.html
+
+Сделано:
+- под основным CTA добавлен блок вспомогательных кнопок
+- визуально они сделаны в стиле главной кнопки, но меньше
+- ссылки ведут на:
+  - https://www.roviniete.ro/ro/rovinieta
+  - https://www.roviniete.ro/ro/plata-taxa-pod
+  - https://www.aida.info.ro/polite-rca
+- блок задуман как driver magnet, не перебивающий основную цель продажи RCA
+
+User:
+Передал список жирных SEO-ключей для водителей и предложил внедрить их в FAQ-блок на главной странице.
+
+Assistant:
+Обновил:
+- /Users/alex/Documents/GitHub/DestineBroker/index.html
+
+Сделано:
+- на главной добавлена новая секция FAQ / Intrebari frecvente
+- секция оформлена в виде аккордеона без JavaScript
+- встроены ключи:
+  - rovinieta online
+  - RCA ieftin
+  - verificare asigurare RCA
+  - taxa de pod Fetesti
+- добавлены внешние ссылки на официальные ресурсы:
+  - roviniete.ro
+  - AIDA
+- в head главной страницы добавлена FAQPage schema под этот блок
+
+Current Project Files Added / Updated In This Session:
+- /Users/alex/Documents/GitHub/DestineBroker/index.html
+- /Users/alex/Documents/GitHub/DestineBroker/rca.html
+- /Users/alex/Documents/GitHub/DestineBroker/locuinta.html
+- /Users/alex/Documents/GitHub/DestineBroker/calatorie.html
+- /Users/alex/Documents/GitHub/DestineBroker/sitemap.xml
+- /Users/alex/Documents/GitHub/DestineBroker/project-status.txt
+- /Users/alex/Documents/GitHub/DestineBroker/conversation-log.txt
+
+Current Public URLs Planned / Relevant:
+- Main site: https://destine.insur.workers.dev/
+- RCA page: https://destine.insur.workers.dev/rca.html
+- CASCO page: https://destine.insur.workers.dev/casco.html
+- Locuinta page: https://destine.insur.workers.dev/locuinta.html
+- Calatorie page: https://destine.insur.workers.dev/calatorie.html
+- Sitemap: https://destine.insur.workers.dev/sitemap.xml
+
+Latest Known Direction (updated):
+- Базовая SEO-структура сайта теперь состоит из главной и 4 категорий:
+  RCA / CASCO / Locuinta / Calatorie
+- На RCA-странице добавлены полезные быстрые ссылки для водителей
+- На главной добавлен SEO FAQ-блок под поисковые интенты водителей
+- Следующий логичный шаг после возврата к работе:
+  1. задеплоить изменения
+  2. проверить live-страницы
+  3. отправить новые URL в индексацию через Search Console

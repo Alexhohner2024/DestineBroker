@@ -45,10 +45,13 @@ What Has Been Done
   RCA and CASCO
 - Additional SEO landing pages created:
   Locuinta and Calatorie
+- RCA page now includes helper buttons for drivers:
+  Rovinieta / Taxa de pod / Verificare RCA
 - Homepage service cards now link to RCA and CASCO pages.
 - Homepage service cards now also link to Locuinta and Calatorie pages.
 - Sitemap updated to include homepage, RCA page, CASCO page.
 - Sitemap updated to include Locuinta and Calatorie pages.
+- Homepage now includes a driver-focused FAQ accordion with SEO queries and FAQ schema.
 - Google Search Console verification meta tag added to homepage.
 - Google verification HTML file placed in project root.
 - Parasite SEO article for RCA created and published on Telegra.ph.
@@ -64,7 +67,10 @@ Design Direction
 
 SEO Direction
 - Homepage targets broad insurance queries
+- Homepage also targets driver-intent informational queries through FAQ:
+  rovinieta online / RCA ieftin / verificare asigurare RCA / taxa de pod Fetesti
 - RCA page targets RCA / pret RCA / RCA online type intent
+- RCA page also captures utility intent with helper links for drivers
 - CASCO page targets CASCO / protection for car type intent
 - Locuinta page targets asigurare locuinta / casa / apartament type intent
 - Calatorie page targets asigurare de calatorie / vacanta / deplasare type intent
@@ -83,11 +89,12 @@ Parasite SEO Status
 - Medium publication still not done
 
 Open Next Steps
-1. Confirm Google Search Console verification works.
-2. Submit sitemap.xml in Search Console.
-3. Publish CASCO article on Telegra.ph or Medium.
-4. Request indexing for homepage, RCA page, CASCO page, Locuinta page and Calatorie page.
-5. Monitor impressions and clicks in Search Console.
+1. Deploy the latest local changes to the public site.
+2. Confirm Google Search Console verification works.
+3. Submit sitemap.xml in Search Console.
+4. Publish CASCO article on Telegra.ph or Medium.
+5. Request indexing for homepage, RCA page, CASCO page, Locuinta page and Calatorie page.
+6. Monitor impressions and clicks in Search Console.
 
 Important Note For Another Computer / Another Session
 - If a future Codex session does not know this history automatically, open:
