@@ -356,6 +356,14 @@
       margin-top: 22px;
     }
 
+    .helper-actions {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      width: min(100%, 720px);
+      margin-top: 12px;
+    }
+
     .btn {
       display: inline-flex;
       align-items: center;
@@ -382,6 +390,21 @@
       padding: 0 34px;
       border-radius: 20px;
       box-shadow: 0 20px 42px rgba(13, 139, 124, 0.32);
+    }
+
+    .btn-helper {
+      min-height: 46px;
+      padding: 0 16px;
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--primary-deep);
+      background: linear-gradient(135deg, rgba(13, 139, 124, 0.12), rgba(8, 105, 93, 0.08));
+      border: 1px solid rgba(13, 139, 124, 0.18);
+      box-shadow: 0 12px 24px rgba(13, 139, 124, 0.12);
+    }
+
+    .btn-helper:hover {
+      box-shadow: 0 16px 26px rgba(13, 139, 124, 0.16);
     }
 
     .btn-secondary {
@@ -724,6 +747,10 @@
         flex-direction: column;
       }
 
+      .helper-actions {
+        grid-template-columns: 1fr;
+      }
+
       .btn {
         width: 100%;
       }
@@ -790,6 +817,11 @@
             >
               <span>Solicita oferta</span>
             </a>
+          </div>
+          <div class="helper-actions" aria-label="Linkuri utile pentru soferi">
+            <a class="btn btn-helper" href="https://www.roviniete.ro/ro/rovinieta" target="_blank" rel="noopener">Rovinieta</a>
+            <a class="btn btn-helper" href="https://www.roviniete.ro/ro/plata-taxa-pod" target="_blank" rel="noopener">Taxa de pod</a>
+            <a class="btn btn-helper" href="https://www.aida.info.ro/polite-rca" target="_blank" rel="noopener">Verificare RCA</a>
           </div>
 
         </div>
