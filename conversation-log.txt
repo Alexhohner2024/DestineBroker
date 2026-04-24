@@ -865,3 +865,26 @@ Important working convention established in this session:
   Codex should update the local project memory file:
   /Users/alex/Documents/GitHub/DestineBroker/conversation-log.txt
   with a concise summary of the current session and latest implemented changes.
+
+--------------------------------------------------
+Session Continuation
+Date: 2026-04-24
+
+User:
+A cerut ca dupa fiecare schimbare sau raspuns al asistentului sa fie actualizata memoria locala in fisierele text ale proiectului.
+
+Assistant:
+A acceptat regula si a salvat-o in memoria de proiect.
+
+New persistent working rule:
+- After each assistant response or implementation change, update project history text files.
+- Primary memory files to keep updated continuously:
+  - /Users/alex/Documents/GitHub/DestineBroker/conversation-log.txt
+  - /Users/alex/Documents/GitHub/DestineBroker/project-status.txt
+
+Latest implementation snapshot:
+- Chat widget is now present on all key pages:
+  index.html / rca.html / casco.html / locuinta.html / calatorie.html
+- First chat menu options reduced to:
+  RCA / CASCO / Locuinta / Calatorie / Alte intrebari
+- Alte intrebari now skips form fields and directly shows transition message + WhatsApp CTA.

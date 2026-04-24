@@ -132,3 +132,17 @@ Important Note For Another Computer / Another Session
   2. project-status.txt for quick current state
 - Tell Codex:
   "Read conversation-log.txt and project-status.txt first, then continue from the current site state."
+
+Operational Memory Rule (added 2026-04-24)
+- After each assistant response or implementation change, update project history in text files.
+- Keep both files in sync as active memory:
+  - /Users/alex/Documents/GitHub/DestineBroker/conversation-log.txt
+  - /Users/alex/Documents/GitHub/DestineBroker/project-status.txt
+
+Latest Chat Status (2026-04-24)
+- Chat widget deployed on all core pages:
+  index.html / rca.html / casco.html / locuinta.html / calatorie.html
+- First-step options are now limited to:
+  RCA / CASCO / Locuinta / Calatorie / Alte intrebari
+- Alte intrebari behavior:
+  direct WhatsApp handoff with transition message and CTA button, without collecting form fields.
