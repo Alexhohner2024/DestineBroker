@@ -888,3 +888,28 @@ Latest implementation snapshot:
 - First chat menu options reduced to:
   RCA / CASCO / Locuinta / Calatorie / Alte intrebari
 - Alte intrebari now skips form fields and directly shows transition message + WhatsApp CTA.
+
+[2026-04-24] Quick memory update:
+- User asked to open homepage HTML in chat and mark what to remove.
+- Assistant displayed index.html with line numbers (first chunk) and extracted section map:
+  main/hero/servicii/validare/informatii-utile/footer/chat-widget/script anchors.
+- Waiting for user's exact removal instructions by line or block.
+
+[2026-04-24] Browser comment batch received for homepage index.html:
+- Remove helper buttons under hero CTA: Rovinieta / Taxa de pod / Verificare RCA.
+- Make hero CTA button wider and increase text size.
+- Remove the extra hero paragraph: "RCA, CASCO, locuinta si calatorie...".
+- Service card title: change first card heading from "RCA online" to "RCA" and make it larger.
+- Make each service card fully clickable (entire cloud links), not only bottom text links.
+- Stretch heading block "Tipuri de asigurari pe care le poti solicita." across full cloud width with responsive wrapping.
+- Increase social icon badge size in footer cloud.
+- Awaiting explicit user approval phrase before implementation (AGENTS.md workflow).
+
+[2026-04-24] Homepage UI patch applied from browser comments (index.html):
+- Removed hero helper buttons row under main CTA: Rovinieta / Taxa de pod / Verificare RCA.
+- Removed extra hero text line under professional credential.
+- Increased main CTA size in hero (wider + larger text, desktop and mobile tuned).
+- Services section title block stretched to full row width with responsive wrapping.
+- First service title changed from "RCA online" to larger "RCA".
+- Converted all 4 service cards into full-card links (entire cloud clickable): RCA/CASCO/Locuinta/Calatorie.
+- Increased footer social icon cloud and glyph sizes (desktop + mobile).

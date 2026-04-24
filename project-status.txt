@@ -146,3 +146,26 @@ Latest Chat Status (2026-04-24)
   RCA / CASCO / Locuinta / Calatorie / Alte intrebari
 - Alte intrebari behavior:
   direct WhatsApp handoff with transition message and CTA button, without collecting form fields.
+
+[2026-04-24] Working log:
+- index.html reviewed with line map for collaborative cleanup.
+- Pending: user-selected elements to remove from homepage.
+
+[2026-04-24] Pending UI adjustments on homepage (from browser comments):
+1) Remove hero helper links row (Rovinieta/Taxa de pod/Verificare RCA).
+2) Enlarge hero CTA width and font size.
+3) Remove secondary hero paragraph.
+4) RCA card title -> "RCA" and larger typography.
+5) Make all 4 service cards fully clickable.
+6) Stretch services section title across container with responsive wrapping.
+7) Increase footer social icon size.
+Status: queued, waiting for explicit implementation approval.
+
+[2026-04-24] Implemented homepage adjustments (index.html):
+1) Hero helper row removed (Rovinieta/Taxa de pod/Verificare RCA).
+2) Main CTA enlarged (width + font size).
+3) Secondary hero paragraph removed.
+4) RCA card heading simplified to "RCA" and enlarged.
+5) Full-card click behavior enabled for all 4 service cards.
+6) Services heading area expanded to full-width responsive line wrap.
+7) Social media icon cards enlarged.

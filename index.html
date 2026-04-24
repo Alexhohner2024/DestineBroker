@@ -361,14 +361,6 @@
       margin-top: 22px;
     }
 
-    .helper-actions {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
-      width: min(100%, 720px);
-      margin-top: 12px;
-    }
-
     .btn {
       display: inline-flex;
       align-items: center;
@@ -389,10 +381,10 @@
     }
 
     .hero-copy .btn-primary {
-      min-width: min(560px, 100%);
-      min-height: 82px;
-      font-size: 1.42rem;
-      padding: 0 44px;
+      min-width: min(640px, 100%);
+      min-height: 92px;
+      font-size: 1.62rem;
+      padding: 0 52px;
       border-radius: 22px;
       box-shadow: 0 20px 42px rgba(13, 139, 124, 0.32);
     }
@@ -451,6 +443,11 @@
       max-width: 60ch;
     }
 
+    #servicii .section-copy {
+      max-width: none;
+      width: 100%;
+    }
+
     .section-tag {
       display: inline-flex;
       margin-bottom: 12px;
@@ -467,6 +464,11 @@
     .section-copy h2 {
       font-size: clamp(2rem, 4vw, 3.1rem);
       margin-bottom: 12px;
+    }
+
+    #servicii .section-copy h2 {
+      max-width: none;
+      text-wrap: balance;
     }
 
     .trust-legal {
@@ -533,7 +535,8 @@
 
     .service-card {
       border-radius: 28px;
-      padding: 24px;
+      padding: 0;
+      overflow: hidden;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
@@ -545,6 +548,11 @@
       font-size: 1.25rem;
     }
 
+    .service-title-rca {
+      font-size: 1.72rem;
+      line-height: 1.05;
+    }
+
     .service-top {
       display: flex;
       align-items: center;
@@ -553,8 +561,19 @@
       margin-bottom: 18px;
     }
 
+    .service-card-link {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      padding: 24px;
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
     .service-link {
-      margin-top: 18px;
+      margin-top: auto;
+      padding-top: 18px;
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -713,8 +732,8 @@
     }
 
     .social-link {
-      width: 68px;
-      height: 68px;
+      width: 82px;
+      height: 82px;
       justify-content: center;
       border-radius: 20px;
       border: 1px solid rgba(28, 43, 42, 0.12);
@@ -724,8 +743,8 @@
     }
 
     .social-link svg {
-      width: 30px;
-      height: 30px;
+      width: 38px;
+      height: 38px;
       display: block;
       fill: currentColor;
     }
@@ -1227,19 +1246,25 @@
         flex-direction: column;
       }
 
-      .helper-actions {
-        grid-template-columns: 1fr;
-      }
-
       .btn {
         width: 100%;
       }
 
       .hero-copy .btn-primary {
         min-width: 0;
-        min-height: 70px;
-        font-size: 1.16rem;
-        padding: 0 28px;
+        min-height: 76px;
+        font-size: 1.28rem;
+        padding: 0 34px;
+      }
+
+      .social-link {
+        width: 72px;
+        height: 72px;
+      }
+
+      .social-link svg {
+        width: 32px;
+        height: 32px;
       }
 
       .services-grid {
@@ -1314,10 +1339,6 @@
           <p class="hero-credential">
             OLEKSANDR BABAIAN, distribuitor in asigurari pregatit profesional de ISF, in parteneriat cu Destine Holding S.A.
           </p>
-          <p>
-            RCA, CASCO, locuinta si calatorie, cu raspuns rapid si sprijin personal,
-            oriunde in Romania.
-          </p>
 
           <div class="cta-group">
             <button
@@ -1329,12 +1350,6 @@
               <span>Solicita oferta</span>
             </button>
           </div>
-          <div class="helper-actions" aria-label="Linkuri utile pentru soferi">
-            <a class="btn btn-helper" href="https://www.roviniete.ro/ro/rovinieta" target="_blank" rel="noopener">Rovinieta</a>
-            <a class="btn btn-helper" href="https://www.roviniete.ro/ro/plata-taxa-pod" target="_blank" rel="noopener">Taxa de pod</a>
-            <a class="btn btn-helper" href="https://www.aida.info.ro/polite-rca" target="_blank" rel="noopener">Verificare RCA</a>
-          </div>
-
         </div>
       </section>
 
@@ -1348,60 +1363,68 @@
 
           <div class="services-grid">
             <article class="service-card">
-              <div class="service-top">
-                <div>
-                  <h3>RCA online</h3>
+              <a class="service-card-link" href="rca.html" aria-label="Vezi pagina RCA">
+                <div class="service-top">
+                  <div>
+                    <h3 class="service-title-rca">RCA</h3>
+                  </div>
                 </div>
-              </div>
-              <p>
-                Asigurare obligatorie auto, obtinuta simplu si rapid, cu indrumare clara si proces
-                online usor de parcurs.
-              </p>
-              <a class="service-link" href="rca.html">
-                Vezi pagina RCA
+                <p>
+                  Asigurare obligatorie auto, obtinuta simplu si rapid, cu indrumare clara si proces
+                  online usor de parcurs.
+                </p>
+                <span class="service-link">
+                  Vezi pagina RCA
+                </span>
               </a>
             </article>
 
             <article class="service-card">
-              <div class="service-top">
-                <div>
-                  <h3>CASCO</h3>
+              <a class="service-card-link" href="casco.html" aria-label="Vezi pagina CASCO">
+                <div class="service-top">
+                  <div>
+                    <h3>CASCO</h3>
+                  </div>
                 </div>
-              </div>
-              <p>
-                Protectie suplimentara pentru masina ta, explicata pe inteles si adaptata nevoilor
-                si bugetului tau.
-              </p>
-              <a class="service-link" href="casco.html">
-                Vezi pagina CASCO
+                <p>
+                  Protectie suplimentara pentru masina ta, explicata pe inteles si adaptata nevoilor
+                  si bugetului tau.
+                </p>
+                <span class="service-link">
+                  Vezi pagina CASCO
+                </span>
               </a>
             </article>
 
             <article class="service-card">
-              <div class="service-top">
-                <div>
-                  <h3>Asigurare locuinta</h3>
+              <a class="service-card-link" href="locuinta.html" aria-label="Vezi pagina Locuinta">
+                <div class="service-top">
+                  <div>
+                    <h3>Asigurare locuinta</h3>
+                  </div>
                 </div>
-              </div>
-              <p>
-                Protectie pentru casa sau apartament, cu explicatii clare si pasii necesari simplificati.
-              </p>
-              <a class="service-link" href="locuinta.html">
-                Vezi pagina Locuinta
+                <p>
+                  Protectie pentru casa sau apartament, cu explicatii clare si pasii necesari simplificati.
+                </p>
+                <span class="service-link">
+                  Vezi pagina Locuinta
+                </span>
               </a>
             </article>
 
             <article class="service-card">
-              <div class="service-top">
-                <div>
-                  <h3>Asigurare de calatorie</h3>
+              <a class="service-card-link" href="calatorie.html" aria-label="Vezi pagina Calatorie">
+                <div class="service-top">
+                  <div>
+                    <h3>Asigurare de calatorie</h3>
+                  </div>
                 </div>
-              </div>
-              <p>
-                Solutie utila pentru vacante si deplasari, cu emitere online si ajutor clar la alegere.
-              </p>
-              <a class="service-link" href="calatorie.html">
-                Vezi pagina Calatorie
+                <p>
+                  Solutie utila pentru vacante si deplasari, cu emitere online si ajutor clar la alegere.
+                </p>
+                <span class="service-link">
+                  Vezi pagina Calatorie
+                </span>
               </a>
             </article>
 
