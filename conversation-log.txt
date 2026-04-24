@@ -973,3 +973,6 @@ Implemented in index.html:
 6) Contact section kept WhatsApp-first with required order and helper text.
 7) Broken characters fixed (e.g., Asistență..., Repornește..., Închide..., Scrieți..., ofertă, topbar symbol replacement).
 8) Auxiliary explanatory text in process/trust cards shortened for lighter scan.
+
+[2026-04-24] User requested removing extra WhatsApp button on homepage.
+Implemented: removed floating sticky WhatsApp CTA and related CSS from index.html; hero primary action remains chat-bot trigger.
