@@ -185,3 +185,9 @@ Status: queued, waiting for explicit implementation approval.
 Pending next stage (Pass 2):
 - Add "Cum funcționează?" section (3 cards)
 - Add trust/social-proof cards section.
+
+[2026-04-24] Pass 2 status (completed):
+1) Added "Cum funcționează?" section (3 cards).
+2) Added "De ce să alegi Destine Broker?" section (4 trust cards).
+3) Added responsive CSS for new sections (desktop+mobile).
+No changes to SEO metadata/structured data/legal text.

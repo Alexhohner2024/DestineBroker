@@ -939,3 +939,13 @@ Key directives captured:
 - Repositioned chat widget to bottom-left to avoid overlap with sticky WhatsApp CTA.
 - Legal/GDPR text retained and visually softened (lighter emphasis).
 - WhatsApp links unified to required encoded Romanian message.
+
+[2026-04-24] Pass 2 implemented on homepage index.html:
+- Added new section: "Cum funcționează?" with 3 step cards:
+  1) Scrii pe WhatsApp
+  2) Trimiți datele necesare
+  3) Primești oferta
+- Added new trust/social-proof section: "De ce să alegi Destine Broker?" with 4 cards:
+  Consultanță personalizată / Răspuns rapid / Experiență și autorizare / Proces simplu.
+- Added lightweight styles for steps/proof grids and mobile responsiveness.
+- Existing structure, SEO metadata, legal and contact links preserved.
