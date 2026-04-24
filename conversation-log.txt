@@ -913,3 +913,29 @@ Latest implementation snapshot:
 - First service title changed from "RCA online" to larger "RCA".
 - Converted all 4 service cards into full-card links (entire cloud clickable): RCA/CASCO/Locuinta/Calatorie.
 - Increased footer social icon cloud and glyph sizes (desktop + mobile).
+
+[2026-04-24] User provided a full UX/UI+conversion master prompt for DestineBroker homepage.
+Key directives captured:
+- Keep current style/system, improve conversion and trust.
+- Romanian copy with diacritics.
+- WhatsApp as primary action (+40755741613) with defined default message.
+- Add/adjust hero, contact emphasis, how-it-works section, trust section, service-specific CTAs, sticky WhatsApp CTA.
+- Keep SEO metadata, structured data, legal/GDPR, performance, mobile quality.
+- Awaiting explicit implementation instruction under AGENTS.md workflow.
+
+[2026-04-24] Pass 1 implemented (WhatsApp-first UX update on homepage index.html):
+- Hero rewritten in Romanian with diacritics:
+  headline: "Asigurări online rapide, fără drumuri și fără stres"
+  subtitle + professional credential kept.
+- Main hero CTA switched to direct WhatsApp link with required prefilled text.
+- Added soft secondary CTA (chat trigger) + CTA note "Răspuns rapid pe WhatsApp".
+- Added 3 benefit/trust badges under hero CTA.
+- Contact area rebalanced to WhatsApp-first:
+  - primary dominant block: "Scrie pe WhatsApp acum"
+  - helper line: "Cel mai rapid mod de a primi o ofertă."
+  - phone kept as secondary ("Sună acum")
+  - email/messenger visually softer.
+- Added sticky WhatsApp floating button (desktop + mobile), accessible and lightweight.
+- Repositioned chat widget to bottom-left to avoid overlap with sticky WhatsApp CTA.
+- Legal/GDPR text retained and visually softened (lighter emphasis).
+- WhatsApp links unified to required encoded Romanian message.

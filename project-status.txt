@@ -169,3 +169,19 @@ Status: queued, waiting for explicit implementation approval.
 5) Full-card click behavior enabled for all 4 service cards.
 6) Services heading area expanded to full-width responsive line wrap.
 7) Social media icon cards enlarged.
+
+[2026-04-24] Strategic update:
+- Received comprehensive conversion/UX prompt with WhatsApp-first funnel requirements.
+- Next recommended mode: staged implementation in homepage index.html with minimal disruption.
+- Current status: planning/approval step before coding.
+
+[2026-04-24] Pass 1 status (completed):
+1) Global UX: WhatsApp became primary conversion path on homepage.
+2) Hero: new conversion copy + primary WhatsApp CTA + trust badges.
+3) Contact section: WhatsApp highlighted as dominant action.
+4) Sticky WhatsApp CTA added (bottom-right).
+5) Chat widget preserved and moved to avoid overlap.
+6) SEO metadata/structured data/legal text preserved.
+Pending next stage (Pass 2):
+- Add "Cum funcționează?" section (3 cards)
+- Add trust/social-proof cards section.
