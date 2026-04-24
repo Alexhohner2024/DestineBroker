@@ -976,3 +976,6 @@ Implemented in index.html:
 
 [2026-04-24] User requested removing extra WhatsApp button on homepage.
 Implemented: removed floating sticky WhatsApp CTA and related CSS from index.html; hero primary action remains chat-bot trigger.
+
+[2026-04-24] User requested removing bright green WhatsApp cloud style in contact block.
+Implemented in index.html: WhatsApp contact card switched to light background, dark readable text, subtle border/shadow, and soft icon accent; visual priority preserved without aggressive fill.

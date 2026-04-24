@@ -207,3 +207,6 @@ No changes to SEO metadata/structured data/legal text.
 
 [2026-04-24] Homepage CTA cleanup:
 - Removed floating WhatsApp button from homepage; chat-bot remains the primary quick action button in hero.
+
+[2026-04-24] Contact visual refinement:
+- WhatsApp contact card restyled from solid green to light premium card with subtle green accent and improved text readability.
