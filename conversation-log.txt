@@ -949,3 +949,27 @@ Key directives captured:
   Consultanță personalizată / Răspuns rapid / Experiență și autorizare / Proces simplu.
 - Added lightweight styles for steps/proof grids and mobile responsiveness.
 - Existing structure, SEO metadata, legal and contact links preserved.
+
+[2026-04-24] Pass 3 implemented on homepage index.html:
+- Added service-specific WhatsApp CTAs inside service cards with prefilled Romanian messages:
+  - Solicită ofertă RCA
+  - Solicită ofertă CASCO
+  - Solicită ofertă locuință
+  - Solicită ofertă călătorie
+- Added a dedicated "Carte Verde" service card with WhatsApp CTA:
+  - Solicită Carte Verde
+- Kept existing service-card navigation behavior while adding per-card WhatsApp action.
+- Added lightweight JS delegation for data-service-wa so WhatsApp CTA works reliably inside clickable card links (click + keyboard Enter/Space).
+- No heavy libraries added; mobile compatibility preserved via existing responsive grid.
+- Existing SEO metadata and legal text left unchanged.
+
+[2026-04-24] User requested rollback/simplification of overloaded first screen.
+Implemented in index.html:
+1) Hero headline changed to 'Asigurări online'.
+2) Hero subtitle shortened to: 'RCA, CASCO, locuință și călătorie, cu răspuns rapid pe WhatsApp.'
+3) Hero keeps one main CTA only: 'Solicită ofertă' with required WhatsApp URL.
+4) Hero legal/professional line removed from first screen (kept lower on page in trust/professional section).
+5) Hero badges removed to reduce crowding.
+6) Contact section kept WhatsApp-first with required order and helper text.
+7) Broken characters fixed (e.g., Asistență..., Repornește..., Închide..., Scrieți..., ofertă, topbar symbol replacement).
+8) Auxiliary explanatory text in process/trust cards shortened for lighter scan.

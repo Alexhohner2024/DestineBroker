@@ -191,3 +191,16 @@ Pending next stage (Pass 2):
 2) Added "De ce să alegi Destine Broker?" section (4 trust cards).
 3) Added responsive CSS for new sections (desktop+mobile).
 No changes to SEO metadata/structured data/legal text.
+
+[2026-04-24] Pass 3 status (completed):
+1) Product-specific WhatsApp CTAs added for RCA/CASCO/Locuință/Călătorie.
+2) Carte Verde CTA added on homepage services.
+3) In-card WhatsApp interaction stabilized with small JS handler.
+4) External WhatsApp links use target="_blank" + rel="noopener".
+5) No SEO/legal removal.
+
+[2026-04-24] Homepage cleanup pass (hero simplification):
+- Hero reduced to short premium format: headline 'Asigurari online', short subtitle, single CTA 'Solicita oferta'.
+- Removed hero legal/professional line and badges from first screen; legal content remains in lower professional/trust section.
+- Contact priority kept: WhatsApp -> phone -> email -> Messenger; WhatsApp label set to 'Scrie pe WhatsApp'.
+- Fixed broken Romanian encoding in chat/topbar strings (diacritics restored).
